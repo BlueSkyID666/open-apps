@@ -55,6 +55,7 @@ request — see [CONTRIBUTING.md](CONTRIBUTING.md).
 - [OnionBrowser](https://github.com/OnionBrowser/OnionBrowser) - An open-source, privacy-enhancing web browser for iOS, utilizing the Tor anonymity network.
 - [storypad](https://github.com/theachoem/storypad) - Storypad is an offline-first Flutter diary and journal app that uses a timeline instead of folders, layers mood tracking, photo memories, and customizable typography over a local ObjectBox store with optional Google Drive sync.
 - [UTM](https://github.com/utmapp/UTM) - Run virtual machines on iOS and macOS — Windows, Linux, and retro operating systems.
+- [Weiyu](https://github.com/Sutera-Diffusus/WeChat-daily) - Weiyu is a local-first Windows desktop app that turns readable WeChat messages into searchable daily briefings, with history, speech-to-text, AI-assisted analysis, and a Codex bridge.
 - [YouTrack Mobile](https://github.com/JetBrains/youtrack-mobile) - Official JetBrains YouTrack mobile app — issue tracking, agile boards, knowledge base, and notifications for YouTrack projects.
 
 ## Finance
@@ -92,6 +93,7 @@ request — see [CONTRIBUTING.md](CONTRIBUTING.md).
 - [Immich](https://github.com/immich-app/immich) - Self-hosted photo and video backup solution directly from your mobile phone.
 - [MarketMonk](https://github.com/brandonp2412/MarketMonk) - A Flutter stock and portfolio tracker that combines Yahoo Finance market data, interactive charts, local trade records, and multiple account support.
 - [PeopleInSpace](https://github.com/joreilly/PeopleInSpace) - PeopleInSpace is a Kotlin Multiplatform reference app that shares architecture and data code across iOS, Android, desktop, web, and wearable clients.
+- [Shieldxy](https://rockxy.io/shieldxy) - An auditable macOS application firewall and connection monitor with explicit local network controls.
 - [SwiftHub](https://github.com/khoren93/SwiftHub) - SwiftHub is an iOS GitHub client built on RxSwift and MVVM-C clean architecture, wiring Moya (REST v3) and Apollo (GraphQL v4) behind a flow-coordinator navigation graph with OAuth2 and personal-access-token authentication.
 - [SwiftTerm](https://github.com/migueldeicaza/SwiftTerm) - An Xterm/VT100-compatible terminal emulator implemented in Swift for iOS.
 - [Tura](https://github.com/Tura-AI/tura) - Build agent that uses 80% less token and delivers better results.
@@ -102,8 +104,10 @@ request — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - [flutter-pos-system](https://github.com/evan361425/flutter-pos-system) - An offline-first Flutter point-of-sale app for small restaurants and shops that runs ingredient inventory, menu management, customer demographics, order taking, Bluetooth receipt printing, custom analytics charts, and Google Sheets export entirely on-device with no remote backend.
 - [localmind](https://github.com/abdulmominsakib/localmind) - A Flutter mobile chat client that connects to on-device LLMs and any OpenAI-compatible server — Ollama, LM Studio, OpenRouter — with markdown rendering, voice input, and an MCP tool layer.
+- [Rockxy](https://rockxy.io) - A native macOS HTTP debugging proxy for inspecting HTTPS, API, WebSocket, and GraphQL traffic.
 - [roxum-ide](https://github.com/heckmon/roxum-ide) - A mobile-first Flutter code editor and mini IDE for Android with LSP, an embedded terminal, Git/GitHub tooling, and optional on-device GGUF model chat.
 - [rustdesk](https://github.com/rustdesk/rustdesk) - RustDesk is a self-hostable, cross-platform remote desktop application written in Rust with a Flutter UI, offering an open-source alternative to TeamViewer and AnyDesk for screen sharing, file transfer, and unattended access.
+- [Tracexy](https://rockxy.io/tracexy) - A native, local-first macOS app for capturing live network traffic and investigating PCAP and PCAPNG files.
 
 ## Communication
 
