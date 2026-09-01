@@ -44,13 +44,21 @@ export default defineConfig({
         heading: "Contribute",
         items: [
           { label: "Submit an app", href: "/submit" },
-          { label: "Report an issue", href: "https://github.com/tortuvshin/open-apps/issues", external: true },
+          {
+            label: "Report an issue",
+            href: "https://github.com/tortuvshin/open-apps/issues",
+            external: true,
+          },
         ],
       },
       {
         heading: "Project",
         items: [
-          { label: "Source on GitHub", href: "https://github.com/tortuvshin/open-apps", external: true },
+          {
+            label: "Source on GitHub",
+            href: "https://github.com/tortuvshin/open-apps",
+            external: true,
+          },
           { label: "About", href: "/about" },
         ],
       },
@@ -79,7 +87,7 @@ export default defineConfig({
   // The contributors grid is a community wall, not a leaderboard —
   // per-user contribution counts are noisy here, so only the avatar
   // and handle are shown.
-  contributors: { showContributionCount: false },
+  contributors: { showContributionCount: true },
 
   browse: {
     facets: ["category", "stack", "platform", "license", "tags"],
@@ -87,7 +95,7 @@ export default defineConfig({
   routes: { directory: "apps", item: "app" },
   labels: { singular: "app", plural: "apps" },
 
-  integrations: { github: false },
+  integrations: { github: true },
 
   // No `primaryColor`: buttons and accents fall through to
   // `--grove-foreground`, the neutral treatment the design system
@@ -103,7 +111,11 @@ export default defineConfig({
     pages: [
       { path: "/", type: "home", label: "Homepage" },
       { path: "/apps/", type: "directory", label: "Directory index" },
-      { path: "/collections/top-flutter-apps/", type: "collection", label: "Top Flutter Apps collection" },
+      {
+        path: "/collections/top-flutter-apps/",
+        type: "collection",
+        label: "Top Flutter Apps collection",
+      },
       { path: "/apps/immich/", type: "record", label: "Record detail" },
       { path: "/about/", type: "content", label: "About page" },
       { path: "/empty/", type: "empty", label: "Empty state" },

@@ -1,9 +1,13 @@
 kind: project
 name: Loofah
 slug: loofah
-description: Loofah is an MIT-licensed, local-first meeting notetaker for macOS that records and transcribes on-device and stores notes as ordinary Markdown.
-summary: A Tauri/Rust desktop app and CLI with no account, backend, telemetry, or required cloud; optional summaries use the user's chosen LLM, and a read-only local MCP server exposes the vault to agents.
-sourceDescription: Free, open-source meeting notes for macOS with private on-device transcription, Markdown storage, and optional bring-your-own AI—no accounts, subscriptions, or telemetry.
+description: Loofah is an MIT-licensed, local-first meeting notetaker for macOS that records and
+  transcribes on-device and stores notes as ordinary Markdown.
+summary: A Tauri/Rust desktop app and CLI with no account, backend, telemetry, or required cloud;
+  optional summaries use the user's chosen LLM, and a read-only local MCP server exposes the vault
+  to agents.
+sourceDescription: Free, open-source meeting notes for macOS with private on-device transcription,
+  Markdown storage, and optional bring-your-own AI—no accounts, subscriptions, or telemetry.
 category: productivity
 tags:
   - open-source
@@ -37,11 +41,13 @@ distribution:
       url: https://loofah.io
       verified: true
 bestFor:
-  - Keeping meeting recordings, transcripts, notes, research, and agent-created artifacts in one local Markdown vault.
+  - Keeping meeting recordings, transcripts, notes, research, and agent-created artifacts in one
+    local Markdown vault.
   - People who want on-device meeting transcription without adding a bot to calls.
 whyListed:
   - The complete MIT-licensed application is available to run, inspect, and study.
-  - The codebase combines a Tauri desktop app, Rust CLI, local transcription, Markdown storage, and read-only MCP access.
+  - The codebase combines a Tauri desktop app, Rust CLI, local transcription, Markdown storage, and
+    read-only MCP access.
 caveats:
   - The desktop app currently requires an Apple Silicon Mac; the CLI also supports Linux.
 source:
@@ -55,3 +61,11 @@ curation:
   labels: []
   lenses: []
 visibility: keep
+github:
+  html:
+    license: MIT
+    language: null
+    topics: []
+  sync:
+    syncedAt: 2026-09-01T06:55:53.851Z
+    source: html

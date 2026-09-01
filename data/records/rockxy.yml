@@ -1,8 +1,9 @@
 kind: project
 slug: rockxy
-name: "Rockxy"
-description: "A native macOS HTTP debugging proxy for inspecting HTTPS, API, WebSocket, and GraphQL traffic."
-sourceDescription: "Open-source native macOS HTTP debugging proxy — intercept HTTPS, inspect APIs, mock responses, debug WebSocket & GraphQL. Community-driven. For developers, by developers."
+name: Rockxy
+description: A native macOS HTTP debugging proxy for inspecting HTTPS, API, WebSocket, and GraphQL traffic.
+sourceDescription: Open-source native macOS HTTP debugging proxy — intercept HTTPS, inspect APIs,
+  mock responses, debug WebSocket & GraphQL. Community-driven. For developers, by developers.
 category: developer-tools
 projectType: real-app
 stack: ios
@@ -47,3 +48,11 @@ curation:
   labels: []
   lenses: []
 visibility: keep
+github:
+  html:
+    license: AGPL-3.0
+    language: null
+    topics: []
+  sync:
+    syncedAt: 2026-09-01T06:56:13.308Z
+    source: html

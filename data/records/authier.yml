@@ -1,8 +1,11 @@
 kind: project
 name: Authier
 slug: authier
-description: Authier is an experimental AGPL password manager monorepo with a React Native client, browser extensions, and a web vault for credentials and TOTP codes.
-summary: A TypeScript codebase spanning React Native, browser-extension, Astro, and Cloudflare Worker clients, built around client-side encrypted vault sync and optional trusted-device enrollment approval.
+description: Authier is an experimental AGPL password manager monorepo with a React Native client,
+  browser extensions, and a web vault for credentials and TOTP codes.
+summary: A TypeScript codebase spanning React Native, browser-extension, Astro, and Cloudflare
+  Worker clients, built around client-side encrypted vault sync and optional trusted-device
+  enrollment approval.
 sourceDescription: monorepo for Authier password manager
 category: productivity
 tags:
@@ -49,15 +52,23 @@ distribution:
       url: https://microsoftedge.microsoft.com/addons/detail/authier/jahkkkffomngonmmoopccjnhlngjjnll
       verified: true
 bestFor:
-  - Studying a full-stack TypeScript password manager across React Native, browser extensions, a web vault, and an edge-hosted API.
-  - Exploring client-side encrypted synchronization, TOTP handling, autofill, and trusted-device enrollment workflows in an early-stage codebase.
+  - Studying a full-stack TypeScript password manager across React Native, browser extensions, a web
+    vault, and an edge-hosted API.
+  - Exploring client-side encrypted synchronization, TOTP handling, autofill, and trusted-device
+    enrollment workflows in an early-stage codebase.
 whyListed:
-  - The complete AGPL-licensed application stack is public, actively maintained, documented, and available through three browser-extension stores plus a web vault.
-  - The monorepo provides a concrete example of sharing password-manager schemas and cryptographic workflows across several TypeScript clients.
+  - The complete AGPL-licensed application stack is public, actively maintained, documented, and
+    available through three browser-extension stores plus a web vault.
+  - The monorepo provides a concrete example of sharing password-manager schemas and cryptographic
+    workflows across several TypeScript clients.
 caveats:
-  - Authier is early-stage and has not published an independent third-party security audit; an established audited password manager is the safer default for important secrets.
-  - The native React Native clients are present in source but are not a current public download path; supported downloads are the web vault and browser extensions, including Firefox for Android.
-  - The repository is inspectable, but the current documentation does not present self-hosting as a supported deployment path.
+  - Authier is early-stage and has not published an independent third-party security audit; an
+    established audited password manager is the safer default for important secrets.
+  - The native React Native clients are present in source but are not a current public download
+    path; supported downloads are the web vault and browser extensions, including Firefox for
+    Android.
+  - The repository is inspectable, but the current documentation does not present self-hosting as a
+    supported deployment path.
 source:
   type: submit
   provider: github
@@ -70,3 +81,43 @@ curation:
   lenses: []
 visibility: keep
 content: ./content/records/authier.md
+github:
+  repository:
+    full_name: authier-pm/authier
+    stargazers_count: 14
+    forks_count: 1
+    open_issues_count: 51
+    language: TypeScript
+    pushed_at: 2026-09-01T05:41:25Z
+    updated_at: 2026-09-01T00:39:39Z
+    archived: false
+    disabled: false
+    default_branch: main
+    license:
+      spdx_id: AGPL-3.0
+      name: AGPL-3.0
+    topics:
+      - bitwarden
+      - bun
+      - chrome
+      - chrome-extension
+      - client-side-encryption
+      - edge-extension
+      - firefox-extension
+      - hacktoberfest
+      - open-source
+      - password-generator
+      - password-manager
+      - passwords
+      - react-native
+      - reactjs
+      - security
+      - totp
+      - trpc
+      - typescript
+      - web-extension
+  latestReleaseAt: 2026-08-14T10:09:10Z
+  homepage: https://www.authier.pm/
+  sync:
+    syncedAt: 2026-09-01T06:55:12.041Z
+    source: api

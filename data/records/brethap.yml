@@ -41,12 +41,12 @@ health:
 github:
   repository:
     full_name: jithware/brethap
-    stargazers_count: 86
+    stargazers_count: 85
     forks_count: 17
-    open_issues_count: 5
+    open_issues_count: 4
     language: Dart
     pushed_at: 2026-08-07T17:16:03Z
-    updated_at: 2026-08-09T20:52:09Z
+    updated_at: 2026-08-13T18:44:41Z
     archived: false
     disabled: false
     default_branch: master
@@ -57,5 +57,5 @@ github:
   latestReleaseAt: 2026-07-14T12:39:46Z
   homepage: https://jithware.github.io/brethap
   sync:
-    syncedAt: 2026-08-11T09:33:57.997Z
+    syncedAt: 2026-09-01T06:55:17.184Z
     source: api

@@ -1,8 +1,9 @@
 kind: project
 slug: shieldxy
-name: "Shieldxy"
-description: "An auditable macOS application firewall and connection monitor with explicit local network controls."
-sourceDescription: "Open-source, auditable application firewall and connection monitor for macOS."
+name: Shieldxy
+description: An auditable macOS application firewall and connection monitor with explicit local
+  network controls.
+sourceDescription: Open-source, auditable application firewall and connection monitor for macOS.
 category: tools
 projectType: real-app
 stack: ios
@@ -30,7 +31,8 @@ bestFor:
   - Monitoring outbound connections by application
   - Managing explicit application and domain firewall rules
 whyListed:
-  - Shows an auditable Swift implementation of a macOS Network Extension firewall and local policy engine.
+  - Shows an auditable Swift implementation of a macOS Network Extension firewall and local policy
+    engine.
 caveats:
   - Requires macOS 14 or later.
   - Development builds of the installed network filter require a paid Apple Developer account.
@@ -45,3 +47,11 @@ curation:
   labels: []
   lenses: []
 visibility: keep
+github:
+  html:
+    license: AGPL-3.0
+    language: null
+    topics: []
+  sync:
+    syncedAt: 2026-09-01T06:56:15.707Z
+    source: html

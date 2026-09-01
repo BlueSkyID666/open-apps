@@ -31,7 +31,8 @@ bestFor:
   - Studying a production Flutter client for AI-assisted project workflows
   - Monitoring remote project, preview, and deployment state from a phone
 whyListed:
-  - Demonstrates mobile-native project creation, repository import, AI session continuity, and operational visibility in one open-source Flutter app.
+  - Demonstrates mobile-native project creation, repository import, AI session continuity, and
+    operational visibility in one open-source Flutter app.
 caveats:
   - The documented product platforms are iOS and Android; this entry does not claim desktop support.
 source:
@@ -45,3 +46,22 @@ curation:
   labels: []
   lenses: []
 visibility: keep
+github:
+  repository:
+    full_name: d1vai/d1vai_app
+    stargazers_count: 7
+    forks_count: 1
+    open_issues_count: 0
+    language: Dart
+    pushed_at: 2026-09-01T06:27:52Z
+    updated_at: 2026-09-01T06:20:07Z
+    archived: false
+    disabled: false
+    default_branch: main
+    license:
+      spdx_id: MIT
+      name: MIT
+    topics: []
+  sync:
+    syncedAt: 2026-09-01T06:55:20.402Z
+    source: api

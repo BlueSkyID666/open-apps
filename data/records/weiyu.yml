@@ -1,8 +1,12 @@
 kind: project
 name: Weiyu
 slug: weiyu
-description: Weiyu is a local-first Windows desktop app that turns readable WeChat messages into searchable daily briefings, with history, speech-to-text, AI-assisted analysis, and a Codex bridge.
-summary: A Windows workspace for keeping useful WeChat information searchable instead of buried in chat history. The default workflow is read-only and stores normalized messages and briefings in a local SQLite database.
+description: Weiyu is a local-first Windows desktop app that turns readable WeChat messages into
+  searchable daily briefings, with history, speech-to-text, AI-assisted analysis, and a Codex
+  bridge.
+summary: A Windows workspace for keeping useful WeChat information searchable instead of buried in
+  chat history. The default workflow is read-only and stores normalized messages and briefings in a
+  local SQLite database.
 sourceDescription: Local-first Windows WeChat archive and daily briefing workspace
 category: productivity
 tags:
@@ -62,8 +66,12 @@ github:
   latestReleaseAt: 2026-08-24T11:44:07Z
   homepage: null
   sync:
-    syncedAt: 2026-08-24T13:12:33Z
-    source: api
+    syncedAt: 2026-09-01T06:56:31.108Z
+    source: html
+  html:
+    license: MIT
+    language: null
+    topics: []
 curation:
   reviewed: false
   labels: []

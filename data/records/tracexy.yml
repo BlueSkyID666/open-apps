@@ -1,8 +1,10 @@
 kind: project
 slug: tracexy
-name: "Tracexy"
-description: "A native, local-first macOS app for capturing live network traffic and investigating PCAP and PCAPNG files."
-sourceDescription: "Native, local-first network intelligence for macOS—capture live traffic, inspect PCAP/PCAPNG files, and investigate sessions, protocols, processes, flows, and packet evidence."
+name: Tracexy
+description: A native, local-first macOS app for capturing live network traffic and investigating
+  PCAP and PCAPNG files.
+sourceDescription: Native, local-first network intelligence for macOS—capture live traffic, inspect
+  PCAP/PCAPNG files, and investigate sessions, protocols, processes, flows, and packet evidence.
 category: developer-tools
 projectType: real-app
 stack: ios
@@ -33,7 +35,8 @@ bestFor:
   - Capturing and investigating network traffic locally on macOS
   - Reviewing PCAP and PCAPNG files without uploading capture data
 whyListed:
-  - Provides a native Swift codebase for studying packet capture, protocol decoding, and session analysis.
+  - Provides a native Swift codebase for studying packet capture, protocol decoding, and session
+    analysis.
 caveats:
   - Requires macOS 14 or later.
 source:
@@ -47,3 +50,11 @@ curation:
   labels: []
   lenses: []
 visibility: keep
+github:
+  html:
+    license: AGPL-3.0
+    language: null
+    topics: []
+  sync:
+    syncedAt: 2026-09-01T06:56:23.610Z
+    source: html

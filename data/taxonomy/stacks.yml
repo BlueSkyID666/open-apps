@@ -39,3 +39,9 @@
   family: cross-platform
   languages: [rust, typescript, javascript]
   platforms: [macos, windows, linux]
+
+- id: react
+  name: React (web)
+  family: web
+  languages: [typescript, javascript]
+  platforms: [web]

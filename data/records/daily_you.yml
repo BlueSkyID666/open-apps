@@ -39,12 +39,12 @@ sourceDescription: Daily diary & journaling app
 github:
   repository:
     full_name: Demizo/Daily_You
-    stargazers_count: 1243
-    forks_count: 56
-    open_issues_count: 55
+    stargazers_count: 1282
+    forks_count: 58
+    open_issues_count: 58
     language: Dart
-    pushed_at: 2026-08-11T03:46:42Z
-    updated_at: 2026-08-11T06:18:57Z
+    pushed_at: 2026-08-30T23:05:56Z
+    updated_at: 2026-08-31T12:39:17Z
     archived: false
     disabled: false
     default_branch: master
@@ -52,7 +52,7 @@ github:
       spdx_id: GPL-3.0
       name: GPL-3.0
     topics: []
-  latestReleaseAt: 2026-08-10T15:14:21Z
+  latestReleaseAt: 2026-08-24T23:14:45Z
   sync:
-    syncedAt: 2026-08-11T09:34:01.570Z
+    syncedAt: 2026-09-01T06:55:21.188Z
     source: api

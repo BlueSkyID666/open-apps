@@ -1,41 +1,131 @@
 kind: project
 name: admin-portal
 slug: admin-portal
-description: Invoice Ninja's operator-side admin portal, a single Flutter codebase shipped to
-  Android, iOS, macOS, Windows, Linux, and web that manages the full billing lifecycle — quotes,
-  invoices, recurring invoices, credits, purchase orders, payments, expenses, projects, and time
-  tracking — against a self-hosted or cloud Invoice Ninja v5 server.
-summary: One Flutter/Redux client that Invoice Ninja ships to six platforms, including the Microsoft
-  Store, Mac App Store, Snap, Flatpak, and F-Droid, so a business owner gets the same invoicing
-  console on a desktop as on a phone. Roughly thirty business entities are modelled client-side with
-  built_value immutables, and the settings surface exposes both the payment-gateway matrix and a
-  long list of regional e-invoicing formats.
+description: Flutter (Dart) admin client for the Invoice Ninja v5 invoicing platform, shipping to
+  iOS, Android, macOS, Windows, Linux, and web from a single codebase. Uses Redux + built_value over
+  a single AppState that carries up to ten UserCompanyState slots, talks to the Laravel backend over
+  REST, and ships with a hand-built .foss swap-out that strips the proprietary dependencies for the
+  F-Droid, Snap, and Flatpak builds.
+summary: One Flutter/Redux client that brings the full invoicing surface — quotes, invoices,
+  recurring, credits, payments, expenses, projects, time tracking, e-invoicing — to six platforms
+  including the Microsoft Store, Mac App Store, Snap, Flatpak, and F-Droid, with the most permissive
+  self-host open-core line in the comparison set but a non-OSI license that the README is silent on.
 sourceDescription: "Invoice Ninja: Desktop/mobile admin portal built with Flutter"
 content: ./content/records/admin-portal.md
-category: tools
+category: finance
 tags:
   - android
+  - cross-platform
+  - desktop-app
   - flutter
   - invoice
   - ios
   - linux
   - macos
+  - mobile-app
   - redux
+  - self-hosted
+  - web-app
   - windows
 stack: flutter
+platforms:
+  - ios
+  - android
+  - macos
+  - windows
+  - linux
+  - web
 projectType: real-app
 repoUrl: https://github.com/invoiceninja/admin-portal
 links:
   github: https://github.com/invoiceninja/admin-portal
+  backend: https://github.com/invoiceninja/invoiceninja
+  website: https://invoiceninja.com
+  selfHost: https://www.invoiceninja.org
+  fDroid: https://f-droid.org/en/packages/com.invoiceninja.app/
+  flutterHub: https://github.com/invoiceninja/flutter
+bestFor:
+  - Self-hosting the full Invoice Ninja v5 feature surface without paying per feature
+  - Operating an invoicing business across iOS, Android, Windows, macOS, and Linux from one codebase
+  - Managing up to ten companies from a single login (the multi-tenant AppState model)
+  - Hosting a custom-branded client portal on your own domain
+whyListed:
+  - The most permissive self-host open-core line among the eight alternatives surveyed — every
+    Pro/Enterprise feature compiles into the self-host binary and only the $40/yr white-label
+    branding requires a paid license
+  - The only self-hostable invoicing alternative with an officially maintained cross-platform (iOS +
+    Android + macOS + Windows + Linux + web) Flutter client under the project's own org
+  - A coherent architectural story worth studying as a real example of a 30+ entity
+    Redux/built_value app shipping to five platforms off one codebase
+caveats:
+  - The Flutter admin client and the Laravel backend are both source-available, not OSI-open
+    (Attribution Assurance License on the client; Elastic License 2.0 on the backend)
+  - The admin-portal README is silent on its license, and the F-Droid build carries a "Non-Free
+    Network Services" anti-feature warning
+  - The Flutter Linux desktop client has a long-standing memory leak (upstream
+    flutter/flutter#73402) that the maintainers defer rather than rewrite; community recommends the
+    web client on Linux
+  - The self-host Flutter binary ships hard-coded references to sentry2.invoicing.co,
+    preview.invoicing.co, and OAuth client IDs — self-hosters with strict data-egress controls must
+    fork to remove them
+  - Authentication tokens are base64-obscured in SharedPreferences, not encrypted;
+    flutter_secure_storage is not in the dependency tree
+  - The late-2023 recharacterization of self-hosted "lifetime" licenses as 2-year terms damaged
+    long-term self-hoster trust
+  - The community-consistent
+distribution:
+  channels:
+    - type: app-store
+      platform: ios
+      label: App Store
+      url: https://apps.apple.com/us/app/invoice-ninja/id1503970375
+      verified: true
+    - type: app-store
+      platform: macos
+      label: Mac App Store
+      url: https://apps.apple.com/us/app/invoice-ninja/id1503970375
+      verified: true
+    - type: play-store
+      platform: android
+      label: Google Play
+      url: https://play.google.com/store/apps/details?id=com.invoiceninja.app
+      verified: true
+    - type: fdroid
+      platform: android
+      label: F-Droid
+      url: https://f-droid.org/en/packages/com.invoiceninja.app/
+      verified: true
+    - type: github-releases
+      platform: windows
+      label: Microsoft Store
+      url: https://apps.microsoft.com/store/detail/invoice-ninja/9N3F2BBCFDR6
+      verified: true
+    - type: snap
+      platform: linux
+      label: Snap
+      url: https://snapcraft.io/invoiceninja
+      verified: true
+    - type: flatpak
+      platform: linux
+      label: Flathub
+      url: https://flathub.org/en/apps/com.invoiceninja.InvoiceNinja
+      verified: true
 source:
   type: github-topic
   owner: invoiceninja
   repo: admin-portal
   url: https://github.com/invoiceninja/admin-portal
 curation:
-  reviewed: false
-  labels: []
-  lenses: []
+  reviewed: true
+  reviewedAt: 2026-08-17
+  reviewedBy: Open Apps curators
+  labels:
+    - mature
+  lenses:
+    - good-to-learn
+    - self-host-friendly
+    - watch-the-license
+    - cross-platform-flutter
 visibility: keep
 licenses:
   - noassertion
@@ -44,18 +134,19 @@ health:
   tier: listed
   visibility: keep
   cleanupCandidate: false
-  confidence: medium
+  confidence: high
   reasons:
     - active-development
+    - large-user-base
 github:
   repository:
     full_name: invoiceninja/admin-portal
-    stargazers_count: 1747
+    stargazers_count: 1751
     forks_count: 580
-    open_issues_count: 74
+    open_issues_count: 75
     language: Dart
-    pushed_at: 2026-07-28T18:33:06Z
-    updated_at: 2026-08-09T13:22:41Z
+    pushed_at: 2026-08-21T13:33:31Z
+    updated_at: 2026-08-31T11:57:37Z
     archived: false
     disabled: false
     default_branch: master
@@ -74,5 +165,5 @@ github:
   latestReleaseAt: 2026-05-14T04:37:59Z
   homepage: https://demo.invoiceninja.com
   sync:
-    syncedAt: 2026-08-11T09:33:46.788Z
+    syncedAt: 2026-09-01T06:55:05.232Z
     source: api
