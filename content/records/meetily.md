@@ -5,8 +5,8 @@ projectType: real-app
 category: productivity
 stack: tauri
 summary: A Rust and Tauri desktop app that captures meetings, transcribes them in real time with
-  local Whisper or Parakeet models, separates speakers and writes summaries through Ollama — the
-  community edition processes everything on the machine.
+  local Whisper or Parakeet models and writes summaries through Ollama — the community edition
+  processes everything on the machine.
 description: Meetily is an MIT-licensed AI meeting assistant for macOS and Windows that transcribes
   live with Whisper or Parakeet and summarises with a local Ollama model, without a cloud service.
 sourceDescription: Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live
@@ -41,9 +41,12 @@ bestFor:
 whyListed:
   - The most-starred project in the local meeting-notes space, with installers for macOS and Windows
     on every release.
-  - Live transcription, speaker diarization and summarisation all run on local models in the
-    community edition.
+  - Live transcription and summarisation both run on local models in the community edition.
 caveats:
+  - Speaker diarization is mentioned in the repository description, but the README lists it as a
+    planned PRO feature, not part of the community edition.
+  - It does not describe itself as an Otter alternative; it is listed with them for doing the same
+    job locally.
   - A paid Meetily PRO tier is promoted in the README for higher accuracy, advanced exports and team
     features; this record covers the MIT community edition.
   - The README lists Linux as supported, but the latest release ships macOS and Windows installers
@@ -51,6 +54,12 @@ caveats:
   - Local transcription and a local LLM together need real hardware; summaries are only as good as
     the Ollama model you can run.
 relations:
+  - type: alternative-to
+    to: otter
+    evidence:
+      type: editorial
+      url: https://github.com/Zackriya-Solutions/meetily
+      checkedAt: 2026-09-29
   - type: alternative-to
     to: granola
     evidence:
@@ -75,11 +84,11 @@ curation:
   lenses: []
 visibility: keep
 ---
-Meetily is the most widely adopted open-source meeting assistant that keeps the whole pipeline — capture, live transcription, speaker separation, summary — on your own machine. Pick it if you are on Windows or want the local-only guarantee without configuring providers; be aware that the project also sells a PRO tier, and that Linux users should expect to build from source. Verified against the repository on 22 September 2026, at release v0.4.1.
+Meetily is the most widely adopted open-source meeting assistant that keeps the whole pipeline — capture, live transcription, summary — on your own machine. Pick it if you are on Windows or want the local-only guarantee without configuring providers; be aware that the project also sells a PRO tier, and that Linux users should expect to build from source. Verified against the repository on 22 September 2026, at release v0.4.1.
 
 ## Everything local in the community edition
 
-The repository description is blunt about the design: "100% local processing. no cloud required." Transcription runs on Whisper or NVIDIA's Parakeet models, speakers are separated with diarization, and summaries come from a model served by Ollama. There is no provider to choose because there is no provider — which is the simplest privacy story of any app in this group, and also the most demanding on hardware.
+The repository description is blunt about the design: "100% local processing. no cloud required." Transcription runs on Whisper or NVIDIA's Parakeet models and summaries come from a model served by Ollama. There is no provider to choose because there is no provider — which is the simplest privacy story of any app in this group, and also the most demanding on hardware.
 
 ## Who it is for, and who it is not for
 

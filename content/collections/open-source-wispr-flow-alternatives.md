@@ -21,6 +21,22 @@ Wispr Flow is a subscription dictation app: hold a key, speak, and it transcribe
 
 [Voicebox](/apps/voicebox/) is here too for people who want dictation and voice cloning in one app.
 
+Four more, added in September 2026:
+
+| | [OpenWhispr](/apps/openwhispr/) | [Voquill](/apps/voquill/) | [Amical](/apps/amical/) | [SpeakoFlow](/apps/speakoflow/) |
+|---|---|---|---|---|
+| Windows | Yes | Yes | Yes | Yes |
+| macOS | Yes | Yes | Yes | Yes |
+| Linux | Yes | Yes | — | Yes |
+| Transcription by default | Local or cloud, your choice | Local or cloud, your choice | Local | Local |
+| AI cleanup | Yes | Yes, with writing styles | Formats by active app | Yes, plus "Hey Flow" drafting |
+| Builds | Free; paid cloud plans | Free; paid cloud plan | Free; paid cloud plan | Free |
+| Licence | MIT | AGPL-3.0 plus enterprise code | MIT | MIT |
+
+- **Want meeting transcripts from the same app?** OpenWhispr.
+- **Keep fighting misspelt names and jargon?** Voquill's glossary.
+- **Want tone to follow the app you are in?** Amical.
+
 ## Not listed and why
 
 - **SayIt**, a Windows-only voice-typing app, is promising but under 500 stars and a few months old; it joins after a few more releases.

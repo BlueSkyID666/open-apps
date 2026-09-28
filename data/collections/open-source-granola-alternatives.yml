@@ -13,33 +13,38 @@ query:
 entries:
   - slug: anarlog
     pinned: true
-    note: Best for teams that are not all on Macs. The only one here with macOS, Windows and Linux builds, no bot in the call, notes in local SQLite, and a separate choice of transcription and summary model. Its team now builds another product.
+    note: Best for teams that are not all on Macs. macOS, Windows and Linux builds, no bot in the call, notes in local SQLite, and a separate choice of transcription and summary model. Its team now builds another product.
   - slug: meetily
     note: Best when nothing may leave the machine. The community edition transcribes with local Whisper or Parakeet and summarises through Ollama, on macOS and Windows. Needs hardware that can run a useful local model, and a paid PRO tier sits beside it.
   - slug: humla
     note: Best for meetings in more than one language on an Apple Silicon Mac. Pick a transcription engine per language, keep your voice and the other side on separate streams, identify speakers offline. A young, one-developer project.
   - slug: loofah
     note: Best if you want meetings to land in a plain Markdown vault alongside the rest of your notes. Apple Silicon only for the desktop app, with a CLI that also runs on Linux and read-only MCP access for agents.
+  - slug: minutes
+    note: Best if your AI agents should read your meetings. On-device transcription into Markdown files with decisions and action items, searchable over MCP from Claude Code, Codex or Cursor, with a guide for importing a Granola archive. Mac and Windows desktop, CLI on Linux. MIT, no paid tier.
+  - slug: openwhispr
+    note: Best if you also dictate. Call detection for Zoom, Teams and FaceTime, speaker labels and notes with semantic search, in the same app as hotkey dictation, on Mac, Windows and Linux. MIT; OpenWhispr Cloud plans are optional.
 ranking:
   preset: curated
 editorial:
-  introduction: Four MIT-licensed meeting notetakers that record on your own computer instead of sending a bot into the call. anarlog covers the most platforms; Meetily keeps the whole pipeline local; Humla and Loofah are the Mac-only picks.
+  introduction: Six MIT-licensed meeting notetakers that record on your own computer instead of sending a bot into the call. anarlog and OpenWhispr cover all three desktop systems; Meetily keeps the whole pipeline local; Minutes writes Markdown your AI agents can search; Humla and Loofah are the Mac-only picks.
   selectionNote: >-
     Desktop apps that take AI meeting notes, with an OSI-approved licence, a
     release in the last 90 days and a downloadable build. Each record's
     relation to Granola is either the project's own words, a repository topic,
     or marked as the editor's match. Stars, licences and releases were checked
-    against GitHub on 22 September 2026.
-  lastReviewedAt: "2026-09-22"
+    against GitHub on 22 September 2026; Minutes and OpenWhispr on
+    29 September 2026.
+  lastReviewedAt: "2026-09-29"
 faq:
   - q: Is there an open-source Granola alternative that runs fully offline?
     a: Meetily's community edition is built for it — local Whisper or Parakeet for transcription and Ollama for summaries. anarlog and Humla can also run locally once you choose an on-device transcription model and a local LLM server, but both offer hosted providers too.
   - q: Which of these work on Windows or Linux?
-    a: anarlog ships builds for macOS, Windows and Linux. Meetily ships macOS and Windows installers. Humla and the Loofah desktop app are Apple Silicon only.
+    a: anarlog and OpenWhispr ship builds for macOS, Windows and Linux. Meetily ships macOS and Windows installers, and Minutes has a Windows desktop build and a Linux CLI. Humla and the Loofah desktop app are Apple Silicon only.
   - q: Do these apps join the call as a bot?
-    a: anarlog, Humla and Loofah record the audio on your own device, so nothing appears in the participant list.
+    a: anarlog, Humla, Loofah, Minutes and OpenWhispr record the audio on your own device, so nothing appears in the participant list.
   - q: Are they really open source?
-    a: All four are MIT-licensed. anarlog's repository also contains commercially licensed enterprise components, and Meetily and Humla sell paid tiers — a PRO edition and cloud sync — outside the open code.
+    a: All six are MIT-licensed. anarlog's repository also contains commercially licensed enterprise components, Meetily and Humla sell paid tiers — a PRO edition and cloud sync — outside the open code, and OpenWhispr sells optional cloud plans.
 seo:
   index: true
   title: Open Source Granola Alternatives – Self-Hosted & Local

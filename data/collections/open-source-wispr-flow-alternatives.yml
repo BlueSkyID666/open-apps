@@ -24,29 +24,37 @@ entries:
     note: Best for speed on Apple Silicon. Free builds, near-instant Parakeet and a wide menu of on-device models. macOS only for now, and its local enhancement runtime is closed.
   - slug: freeflow
     note: Best free Mac option for context-aware cleanup. Hold Fn, speak, and names are spelled from the app you are in; Edit Mode rewrites selections by voice. Uses Groq by default, so audio leaves the Mac unless you point it at your own server.
+  - slug: openwhispr
+    note: Best if you also want meeting transcripts. Dictation on local Whisper or Parakeet or your own key, plus call detection, speaker labels, notes and a voice assistant, on Mac, Windows and Linux. MIT; OpenWhispr Cloud plans are optional.
+  - slug: voquill
+    note: Best for specialist vocabulary. A glossary with replacement rules, writing styles and AI cleanup, local Whisper or your own provider, on all three desktop systems plus mobile keyboards. AGPL core; the enterprise directory is proprietary.
+  - slug: amical
+    note: Best for formatting by context. It detects the app you are in and shapes your speech for email, chat or an IDE, with local Whisper models. Mac and Windows (including Arm), no Linux, and telemetry is on until you turn it off. MIT.
+  - slug: speakoflow
+    note: Best if you want Handy plus an assistant. Offline dictation on Windows, Mac and Linux, and "Hey Flow" writes the reply you describe or answers about your screen. MIT, created June 2026, unsigned builds.
   - slug: voicebox
     note: Best if you also want voice cloning. A full local voice studio whose dictation mode comes with text-to-speech and an MCP server. Heavier install than any dictation-only app.
 ranking:
   preset: curated
 editorial:
-  introduction: Seven open-source apps that do Wispr Flow's core job — hold a key, speak, and text appears in whatever app you are using. Handy and Voicetypr are the strongest on Windows; OpenLess comes closest to Wispr's rewrite-as-you-speak; VoiceInk, FluidVoice and FreeFlow are the Mac picks; Voicebox adds a voice studio.
+  introduction: Eleven open-source apps that do Wispr Flow's core job — hold a key, speak, and text appears in whatever app you are using. Handy and Voicetypr are the strongest on Windows; OpenLess comes closest to Wispr's rewrite-as-you-speak; OpenWhispr adds meeting transcripts; Voquill and Amical focus on vocabulary and context; VoiceInk, FluidVoice and FreeFlow are the Mac picks; SpeakoFlow and Voicebox add an assistant and a voice studio.
   selectionNote: >-
     Desktop dictation apps that insert speech as text into other applications,
     with an OSI-approved licence and a downloadable build. Each entry says
     whether transcription is local or cloud by default and whether official
     builds are paid. Each record's relation to Wispr Flow is the project's own
     words or marked as the editor's match. Checked against GitHub on
-    28 September 2026.
-  lastReviewedAt: "2026-09-28"
+    29 September 2026.
+  lastReviewedAt: "2026-09-29"
 faq:
   - q: What is the best open-source Wispr Flow alternative for Windows?
-    a: Handy for free, fully offline dictation on x64 or Arm. Voicetypr for a more polished app with AI formatting and a Microsoft Store listing, if you are willing to pay once for the signed build. OpenLess if you want your speech rewritten, with cloud providers.
+    a: Handy for free, fully offline dictation on x64 or Arm. Voicetypr for a more polished app with AI formatting and a Microsoft Store listing, if you are willing to pay once for the signed build. OpenLess if you want your speech rewritten, with cloud providers. OpenWhispr if you also want meeting transcripts.
   - q: Which ones run completely offline?
-    a: Handy always transcribes locally. Voicetypr, VoiceInk and FluidVoice transcribe on-device by default. OpenLess and FreeFlow use cloud providers by default and can be pointed at local ones with extra setup.
+    a: Handy always transcribes locally, and SpeakoFlow keeps speech-to-text on the device. Voicetypr, VoiceInk, FluidVoice and Amical transcribe on-device by default; OpenWhispr and Voquill let you choose local Whisper or a cloud provider. OpenLess and FreeFlow use cloud providers by default and can be pointed at local ones with extra setup.
   - q: Are they free?
-    a: The source code of all seven is free. Handy, OpenLess, FluidVoice, FreeFlow and Voicebox also give away their builds. Voicetypr and VoiceInk charge for signed builds after a trial; you can build them from source yourself.
+    a: The source code of all eleven is free, apart from Voquill's proprietary enterprise directory. Handy, OpenLess, FluidVoice, FreeFlow, Voicebox, OpenWhispr, Voquill, Amical and SpeakoFlow also give away their builds; OpenWhispr, Voquill and Amical sell optional cloud plans. Voicetypr and VoiceInk charge for signed builds after a trial; you can build them from source yourself.
   - q: Which work on Linux?
-    a: Handy and OpenLess ship Linux builds. Voicebox can be built from source on Linux. The others are Windows and Mac, or Mac only.
+    a: Handy, OpenLess, OpenWhispr, Voquill and SpeakoFlow ship Linux builds. Voicebox can be built from source on Linux. The others are Windows and Mac, or Mac only.
 seo:
   index: true
   title: Open Source Wispr Flow Alternatives – Windows, Mac & Linux

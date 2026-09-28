@@ -1,0 +1,47 @@
+slug: open-source-otter-alternatives
+kind: curated
+title: Open Source Otter.ai Alternatives
+description: Transcription and meeting-notes apps that turn calls, lectures and recordings into text on your own computer instead of a hosted service.
+subject: otter
+content: ./content/collections/open-source-otter-alternatives.md
+# Every record related to Otter.ai joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [otter]
+entries:
+  - slug: openwhispr
+    pinned: true
+    note: Best all-rounder. Detects Zoom, Teams and FaceTime calls, transcribes with speaker labels on local models or your own key, and adds dictation, notes and file transcription — on Mac, Windows and Linux. MIT; OpenWhispr Cloud plans are optional.
+  - slug: minutes
+    note: Best if your AI agents should read your meetings. On-device transcription into Markdown files with decisions and action items, searchable over MCP from Claude Code, Codex or Cursor. Desktop app on Mac and Windows, CLI on Linux. MIT, no paid tier.
+  - slug: meetily
+    note: Best when nothing may leave the machine. Live local transcription with Whisper or Parakeet and Ollama summaries, on macOS and Windows. Meeting auto-detection and speaker identification belong to the paid PRO edition, not the MIT community code.
+  - slug: buzz
+    note: Best for recordings you already have. Transcribes and translates files, YouTube links and live microphone input offline with Whisper, exports subtitles, and installs from Flathub or Snap. No meeting detection or built-in summaries.
+  - slug: vibe
+    note: Best lightweight transcriber. A Tauri app that handles files, batches, system audio and the microphone offline, labels speakers, and summarises through Ollama. No meeting detection.
+ranking:
+  preset: curated
+editorial:
+  introduction: Five open-source apps that do the part of Otter.ai you care about most — turning speech into a transcript you can search — without uploading the audio. OpenWhispr and Minutes handle meetings end to end; Meetily keeps everything local; Buzz and Vibe are transcription workbenches for recordings.
+  selectionNote: >-
+    Desktop apps that transcribe meetings or recordings, with an OSI-approved
+    licence, commits in the last 90 days and a downloadable build. Each
+    record's relation to Otter.ai is the project's own words or marked as the
+    editor's match. Checked against GitHub on 29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: Is there an open-source Otter.ai alternative that records meetings automatically?
+    a: OpenWhispr detects Zoom, Teams and FaceTime calls and transcribes them with speaker labels. The Minutes desktop app shows a "Call detected" banner on macOS. Meetily's community edition records meetings you start; auto-detection is in its paid PRO edition. None of them sends a bot into the call.
+  - q: Which ones work fully offline?
+    a: Buzz and Vibe transcribe offline by design. Meetily's community edition runs transcription and summaries on local models. OpenWhispr and Minutes transcribe locally and only send text out if you choose a cloud AI provider.
+  - q: Which work on Linux?
+    a: OpenWhispr, Buzz and Vibe ship Linux builds; Buzz is on Flathub and Snap. Minutes runs on Linux as a command-line tool. Meetily ships macOS and Windows installers.
+  - q: Are they free?
+    a: All five are MIT-licensed and free to download. OpenWhispr sells optional cloud plans and Meetily sells a PRO edition beside the open code; Minutes commits to no paid tier for anything in its repository.
+seo:
+  index: true
+  title: Open Source Otter.ai Alternatives – Local Transcription Apps
+  description: OpenWhispr, Minutes, Meetily, Buzz and Vibe compared — MIT-licensed apps that transcribe meetings and recordings on your own computer, for Mac, Windows and Linux.
