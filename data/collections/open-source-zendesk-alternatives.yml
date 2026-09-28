@@ -1,0 +1,47 @@
+slug: open-source-zendesk-alternatives
+kind: curated
+title: Open Source Zendesk Alternatives
+description: Self-hosted help desks and customer support platforms — a multi-channel ticketing system, a shared inbox, a live-chat desk and a ticketing app with SLAs.
+subject: zendesk
+content: ./content/collections/open-source-zendesk-alternatives.md
+# Every record related to Zendesk joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [zendesk]
+entries:
+  - slug: zammad
+    pinned: true
+    note: Best overall for a full ticketing system. Email, chat, phone and social media in one queue, a REST API, and Docker, Helm or DEB/RPM installs. AGPL-3.0 throughout, owned by the Zammad Foundation. The editor's match.
+  - slug: chatwoot
+    note: Best for live chat and messaging apps. One inbox for website chat, email, WhatsApp, Instagram and more, with a help centre. MIT core; Captain AI, SSO and SLA policies need a paid licence.
+  - slug: freescout
+    note: Best lightweight shared inbox. Pure PHP and MySQL, runs on shared hosting, unlimited agents and mailboxes. AGPL-3.0, but most official modules are paid one-time licences.
+  - slug: frappe-helpdesk
+    note: Best for SLAs and a customer portal. Assignment rules, a knowledge base and saved replies, on the Frappe Framework from the makers of ERPNext. AGPL-3.0. The editor's match.
+ranking:
+  preset: curated
+editorial:
+  introduction: Four self-hosted ways to run customer support without Zendesk. Zammad is the complete ticketing system; Chatwoot is built around live chat and messaging; FreeScout is the lightest shared inbox; Frappe Helpdesk brings SLAs and a customer portal.
+  selectionNote: >-
+    Self-hostable help desks and customer support platforms with an
+    OSI-approved licence for the self-hosted core and commits in the last 90
+    days. FreeScout and Chatwoot describe themselves as Zendesk alternatives;
+    Zammad and Frappe Helpdesk are marked as the editor's match. Open-core
+    limits are named in each verdict. Checked against GitHub and vendor
+    documentation on 29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: What is the best self-hosted Zendesk alternative?
+    a: Zammad for a full multi-channel ticketing system that is AGPL-3.0 throughout. Chatwoot if live chat and messaging apps are where your customers are. FreeScout if you want a simple shared inbox on minimal hosting.
+  - q: Which one is completely free to self-host?
+    a: Zammad and Frappe Helpdesk ship everything under AGPL-3.0. FreeScout's core is free but most official modules are paid. Chatwoot's MIT core is free, while Captain AI, SSO, SLA policies and some admin features need a paid plan.
+  - q: Which one has an AI assistant?
+    a: Chatwoot's Captain AI agent is a paid-plan feature. FreeScout offers AI-drafted replies through a free AI Integration module.
+  - q: Can I run one on shared PHP hosting?
+    a: FreeScout, which needs only PHP and MySQL, MariaDB or PostgreSQL. The others need Docker, Kubernetes or a Linux server with their own services.
+seo:
+  index: true
+  title: Open Source Zendesk Alternatives – Self-Hosted Help Desks
+  description: Zammad, Chatwoot, FreeScout and Frappe Helpdesk compared — self-hosted help desks for ticketing, live chat and shared inboxes, with what each keeps behind a paid plan.

@@ -1,0 +1,44 @@
+slug: open-source-firebase-alternatives
+kind: curated
+title: Open Source Firebase Alternatives
+description: Self-hosted backends that give apps auth, a database, file storage and realtime — on Postgres, as a full platform, or in a single executable.
+subject: firebase
+content: ./content/collections/open-source-firebase-alternatives.md
+# Every record related to Firebase joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [firebase]
+entries:
+  - slug: supabase
+    pinned: true
+    note: Best overall for SQL and PostgreSQL. Auth, generated REST and GraphQL APIs, realtime, edge functions, storage and vectors around a Postgres database. Apache-2.0; self-hosting lacks branching, managed backups and some platform features.
+  - slug: appwrite
+    note: Best all-in-one platform. Auth, databases, storage, functions, frontend hosting, messaging and realtime, with first-party mobile SDKs and MCP. One Docker command to install. BSD-3-Clause. The editor's match.
+  - slug: pocketbase
+    note: Best for small apps and solo developers. SQLite, realtime, auth, files and an admin dashboard in one executable. MIT; still pre-1.0. The editor's match.
+ranking:
+  preset: curated
+editorial:
+  introduction: Three self-hosted backends for web and mobile apps. Supabase puts PostgreSQL at the centre; Appwrite is the widest platform; PocketBase fits the whole backend into one file.
+  selectionNote: >-
+    Self-hostable backend platforms with an OSI-approved licence and commits in
+    the last 90 days. Supabase describes itself as building the features of
+    Firebase; Appwrite and PocketBase are marked as the editor's match. Libraries
+    and client SDKs on their own are excluded. Checked against GitHub and vendor
+    documentation on 29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: What is the best open-source Firebase alternative?
+    a: Supabase if you want PostgreSQL and SQL. Appwrite if you want functions, hosting and messaging in the same platform. PocketBase for a small app you want to run from one file.
+  - q: Is self-hosted Supabase the same as the hosted platform?
+    a: No. Supabase's documentation lists branching, managed backups and point-in-time recovery, advanced metrics, ETL and the platform management API as unavailable when self-hosting, and self-hosted Studio manages one project.
+  - q: Which one is easiest to run?
+    a: PocketBase — download the executable and run it. Appwrite installs with one Docker command; Supabase uses Docker Compose with several services.
+  - q: Do they have mobile SDKs?
+    a: Appwrite has first-party SDKs for Flutter, Apple, Android and React Native. PocketBase has JavaScript and Dart SDKs. Supabase publishes official client libraries for several languages.
+seo:
+  index: true
+  title: Open Source Firebase Alternatives – Self-Hosted Backends
+  description: Supabase, Appwrite and PocketBase compared — self-hosted backends with auth, database, storage and realtime, and what self-hosting leaves out.

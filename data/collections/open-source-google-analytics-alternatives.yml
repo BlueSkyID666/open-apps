@@ -1,0 +1,49 @@
+slug: open-source-google-analytics-alternatives
+kind: curated
+title: Open Source Google Analytics Alternatives
+description: Self-hosted, privacy-first web analytics — from a one-page dashboard to product analytics with funnels and session replay.
+subject: google-analytics
+content: ./content/collections/open-source-google-analytics-alternatives.md
+# Every record related to Google Analytics joins automatically; the picks
+# below carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [google-analytics]
+entries:
+  - slug: umami
+    pinned: true
+    note: Best overall and the easiest to self-host. Traffic, campaigns, conversions and revenue without cookies, on Node.js and one PostgreSQL database. MIT with no enterprise edition; anonymous telemetry can be switched off. The editor's match.
+  - slug: plausible
+    note: Best for the simplest dashboard. One page of stats, a tiny script and Google Analytics import. AGPL-3.0 Community Edition released twice a year; funnels, revenue goals and SSO are cloud-only.
+  - slug: rybbit
+    note: Best for product analytics on your own server. Funnels, journeys, retention, session replays and error tracking in the AGPL build. Needs ClickHouse, PostgreSQL and Redis.
+  - slug: matomo
+    note: Best for Google Analytics-scale reporting. A full analytics suite on PHP and MySQL, formerly Piwik. GPL-3.0; heatmaps, funnels and A/B testing are premium plugins.
+  - slug: openpanel
+    note: Best if you also use Mixpanel. Events, funnels, cohorts, user profiles, session replay and A/B breakdowns, with mobile SDKs. AGPL-3.0; no tagged releases.
+ranking:
+  preset: curated
+editorial:
+  introduction: Five self-hosted analytics tools that keep visitor data on your servers. Umami and Plausible are simple and light; Matomo is the full suite; Rybbit and OpenPanel add product analytics such as funnels and session replay.
+  selectionNote: >-
+    Self-hostable web analytics applications with an OSI-approved licence for
+    the self-hosted edition and commits in the last 90 days. Plausible, Rybbit,
+    Matomo and OpenPanel describe themselves as Google Analytics alternatives
+    or replacements; Umami is marked as the editor's match. Hosted-only
+    services and archived projects are excluded. Checked against GitHub and
+    vendor documentation on 29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: What is the best self-hosted Google Analytics alternative?
+    a: Umami for most sites — it is MIT, cookie-free and needs only Node.js and PostgreSQL. Matomo if you need the breadth of Google Analytics. Rybbit if you also want funnels and session replays.
+  - q: Do these need a cookie banner?
+    a: Umami, Plausible, Rybbit and OpenPanel track without cookies by default. Whether you need consent depends on your jurisdiction and configuration, so check with your own adviser.
+  - q: Are they fully open source when self-hosted?
+    a: Umami (MIT), Rybbit and OpenPanel (AGPL-3.0) keep their features in the repository. Plausible's Community Edition leaves out premium features, and Matomo sells some features as premium plugins.
+  - q: Can I import my Google Analytics history?
+    a: Plausible documents importing historical Google Analytics stats. Check each project's documentation for the others.
+seo:
+  index: true
+  title: Open Source Google Analytics Alternatives – Self-Hosted
+  description: Umami, Plausible, Rybbit, Matomo and OpenPanel compared — privacy-first, self-hosted web analytics, from one-page dashboards to funnels and session replay.
