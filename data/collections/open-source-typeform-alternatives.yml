@@ -1,0 +1,46 @@
+slug: open-source-typeform-alternatives
+kind: curated
+title: Open Source Typeform Alternatives
+description: Self-hosted form builders and survey platforms — conversational forms, everyday web forms, in-app product surveys and research questionnaires.
+subject: typeform
+content: ./content/collections/open-source-typeform-alternatives.md
+# Every record related to Typeform joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [typeform]
+entries:
+  - slug: heyform
+    pinned: true
+    note: Best match for Typeform's style. Conversational forms for surveys, quizzes and polls, with logic, custom themes and CSS, drop-off analytics and webhooks. AGPL-3.0 across the repository, with no enterprise directory.
+  - slug: formbricks
+    note: Best for product feedback. Link, website, in-app and email surveys targeted at user groups without code changes. AGPL core; SSO, teams, audit logs and other features need an Enterprise licence, and telemetry is on until you disable it.
+  - slug: opnform
+    note: Best for everyday web forms. Unlimited forms and submissions, file uploads, logic, embeds, Slack and Discord notifications, and an MCP server for AI agents. AGPL core with a small enterprise directory.
+  - slug: limesurvey
+    note: Best for research surveys. Developed since 2006, with 30+ question types, branching, surveys in 80+ languages, invitation-only access and statistics. GPL-2.0 or later on a classic PHP stack.
+ranking:
+  preset: curated
+editorial:
+  introduction: Four self-hosted ways to replace Typeform. HeyForm is the closest to its conversational forms; Formbricks targets surveys inside your product; OpnForm handles the forms most websites need; LimeSurvey is the long-standing choice for research questionnaires.
+  selectionNote: >-
+    Self-hostable form builders and survey platforms with an OSI-approved
+    licence for the self-hosted edition and commits in the last 30 days.
+    Each record's relation to Typeform is the project's own words, on its
+    repository or website. Checked against GitHub and vendor sites on
+    29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: What is the closest open-source alternative to Typeform?
+    a: HeyForm, which builds conversational forms, quizzes and polls and calls itself the open-source Typeform alternative. OpnForm also offers Typeform-style layouts beside classic single-page forms.
+  - q: Which one is fully open source?
+    a: HeyForm (AGPL-3.0) and LimeSurvey (GPL-2.0 or later) have no separately licensed code in their repositories. Formbricks and OpnForm are open-core, with enterprise directories under proprietary licences.
+  - q: Can I run in-app surveys like a product feedback tool?
+    a: Yes, with Formbricks. It has SDKs for JavaScript, Android and iOS and targets surveys at user groups without changing your application code.
+  - q: What about Typebot?
+    a: Typebot builds chat-style forms, but it is licensed under the Functional Source License, which is source-available rather than open source, so it is not listed.
+seo:
+  index: true
+  title: Open Source Typeform Alternatives – Self-Hosted Forms
+  description: HeyForm, Formbricks, OpnForm and LimeSurvey compared — self-hosted form builders and survey tools for teams leaving Typeform, with licences explained.

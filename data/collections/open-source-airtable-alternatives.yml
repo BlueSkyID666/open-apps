@@ -1,0 +1,44 @@
+slug: open-source-airtable-alternatives
+kind: curated
+title: Open Source Airtable Alternatives
+description: Self-hosted no-code databases and relational spreadsheets — tables, views, forms, automations and APIs on your own servers.
+subject: airtable
+content: ./content/collections/open-source-airtable-alternatives.md
+# Every record related to Airtable joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [airtable]
+entries:
+  - slug: baserow
+    pinned: true
+    note: Best overall for leaving Airtable. Tables with form and kanban views, published apps and portals, automations, dashboards and a REST API on PostgreSQL. The open-source edition is MIT; premium and enterprise directories need a subscription.
+  - slug: teable
+    note: Best for PostgreSQL and very large tables. Grid, form, kanban, gallery and calendar views, formulas, real-time collaboration, automations and SQL queries. AGPL core; AI chat, agents and the App Builder are paid.
+  - slug: grist
+    note: Best for spreadsheet thinkers. A relational spreadsheet with Python formulas, linked widgets, native forms, row- and column-level access rules and a desktop app. Apache-2.0 core, with an open-source-only Docker image.
+ranking:
+  preset: curated
+editorial:
+  introduction: Three self-hosted replacements for Airtable. Baserow is the closest all-round match under an MIT core; Teable puts the spreadsheet interface on PostgreSQL; Grist is a relational spreadsheet with Python formulas.
+  selectionNote: >-
+    Self-hostable no-code databases and relational spreadsheets with an
+    OSI-approved licence for the self-hosted edition and commits in the
+    last 30 days. Each record's relation to Airtable is the project's own
+    words or a repository topic. Checked against GitHub and vendor sites
+    on 29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: What is the best self-hosted Airtable alternative?
+    a: Baserow for most teams — it covers tables, views, apps and automations, and its open-source edition is MIT. Teable if you want PostgreSQL underneath and large tables. Grist if your team thinks in formulas.
+  - q: Why isn't NocoDB listed?
+    a: NocoDB's repository is under the Sustainable Use License, which restricts use and is not an OSI-approved open-source licence.
+  - q: Are these fully open source?
+    a: All three are open-core. Baserow's premium and enterprise directories, Teable's AI and enterprise features and Grist's full-edition features are proprietary; the self-hosted cores are MIT, AGPL-3.0 and Apache-2.0 respectively.
+  - q: Can I import my Airtable data?
+    a: Grist imports directly from Airtable, according to its README. Baserow's site offers help moving from Airtable. For Teable, check its documentation before planning a migration.
+seo:
+  index: true
+  title: Open Source Airtable Alternatives – Self-Hosted Databases
+  description: Baserow, Teable and Grist compared — self-hosted no-code databases and relational spreadsheets for teams leaving Airtable, with licences explained.

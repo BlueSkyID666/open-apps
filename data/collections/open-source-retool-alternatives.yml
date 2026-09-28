@@ -1,0 +1,44 @@
+slug: open-source-retool-alternatives
+kind: curated
+title: Open Source Retool Alternatives
+description: Self-hosted low-code platforms for internal tools, admin panels and dashboards on your own databases and APIs — with how each one licenses its paid features.
+subject: retool
+content: ./content/collections/open-source-retool-alternatives.md
+# Every record related to Retool joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [retool]
+entries:
+  - slug: appsmith
+    pinned: true
+    note: Best overall and the cleanest licence. Admin panels, dashboards and internal tools on 25+ databases and any API, with Git versioning. The public repository is Apache-2.0 throughout; telemetry is on by default and can be turned off.
+  - slug: tooljet
+    note: Best for a built-in database and Python. 80+ components, ToolJet Database, 90+ data sources, JavaScript and Python in apps, and an MCP server for coding agents. AGPL core; AI generation, workflows and GitSync are paid.
+  - slug: budibase
+    note: Best for operations teams. Apps, automations and AI agents that handle requests and approvals, with unlimited users on the free self-hosted plan. GPL-3.0 core, paid features under BSL and a bundled proprietary query server.
+ranking:
+  preset: curated
+editorial:
+  introduction: Three self-hosted replacements for Retool. Appsmith is the established, Apache-licensed builder; ToolJet adds its own database and Python; Budibase leans toward operations work with automations and agents.
+  selectionNote: >-
+    Self-hostable low-code platforms for internal tools with an OSI-approved
+    licence for the self-hosted core and commits in the last 30 days. Each
+    record's relation to Retool is the vendor's own comparison or round-up
+    of Retool alternatives. Checked against GitHub and vendor sites on
+    29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: What is the best open-source Retool alternative?
+    a: Appsmith for most teams — it is widely used and its public repository is Apache-2.0. ToolJet if you want a built-in database and Python in apps. Budibase if your work is requests, approvals and automations.
+  - q: Are they fully open source?
+    a: Appsmith's repository is Apache-2.0, with paid plans on top. ToolJet keeps enterprise code in separate submodules. Budibase puts paid features under the Business Source License and ships a proprietary query server binary.
+  - q: Do they send telemetry?
+    a: Appsmith and ToolJet send usage telemetry by default and let you turn it off; Appsmith also sends a keep-alive ping either way. Check each project's settings before deploying.
+  - q: Why isn't NocoBase listed?
+    a: NocoBase's licence adds terms on top of Apache-2.0, including a ban on offering it as a hosted no-code or low-code service, so it is not an OSI-approved open-source licence.
+seo:
+  index: true
+  title: Open Source Retool Alternatives – Self-Hosted Internal Tools
+  description: Appsmith, ToolJet and Budibase compared — self-hosted low-code builders for internal tools and admin panels, with editions and licences explained.
