@@ -1,0 +1,42 @@
+slug: open-source-elevenlabs-alternatives
+kind: curated
+title: Open Source ElevenLabs Alternatives
+description: Desktop voice studios that clone voices, generate speech and dub video on your own hardware instead of a cloud API.
+subject: elevenlabs
+content: ./content/collections/open-source-elevenlabs-alternatives.md
+# Every record related to ElevenLabs joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [elevenlabs]
+entries:
+  - slug: voicestudio
+    pinned: true
+    note: Best for range. Cloning, voice design, video dubbing, dictation, transcription and audiobooks in one app on macOS, Windows and Linux, with swappable engines. The app is AGPL-3.0, but the default model's weights are non-commercial — pick another engine to sell the audio.
+  - slug: voicebox
+    note: Best for commercial-friendly local voices and agents. An MIT app whose bundled engines are mostly MIT or Apache-2.0, with dictation and a built-in MCP server that lets agents speak in a cloned voice. Smoothest on Apple Silicon; Windows GPUs and Linux take more work, and the last release was v0.5.0 in April.
+ranking:
+  preset: curated
+editorial:
+  introduction: Two desktop apps that do most of what ElevenLabs does — voice cloning, text-to-speech, dictation, and in one case video dubbing — on your own computer. VoiceStudio covers the most ground; Voicebox is the one to pick when the model licences have to allow commercial use.
+  selectionNote: >-
+    Desktop applications for voice cloning and speech generation that run models
+    locally, with an OSI-approved application licence and a downloadable build.
+    Model weights are licensed separately and each entry says how. Each record's
+    relation to ElevenLabs is the project's own words. Checked against GitHub
+    and the model cards on 28 September 2026.
+  lastReviewedAt: "2026-09-28"
+faq:
+  - q: Is there a free, local ElevenLabs alternative?
+    a: VoiceStudio and Voicebox both clone voices and generate speech on your own machine, with no per-character fees. You need a capable GPU or an Apple Silicon Mac for the larger models.
+  - q: Can I use the audio commercially?
+    a: It depends on the model, not the app. VoiceStudio's default OmniVoice weights are CC-BY-NC, which rules out commercial use; choose another engine. Voicebox's bundled engines are mostly MIT or Apache-2.0, except HumeAI TADA, which carries the Llama 3.2 community licence.
+  - q: Which one dubs video?
+    a: VoiceStudio has a video dubbing workspace with timed speech. Voicebox focuses on speech generation, dictation and multi-track stories.
+  - q: Which works on Windows and Linux?
+    a: VoiceStudio ships builds for macOS, Windows and Linux. Voicebox ships macOS and Windows builds; Linux is a build from source.
+seo:
+  index: true
+  title: Open Source ElevenLabs Alternatives – Local Voice Cloning
+  description: VoiceStudio and Voicebox compared — desktop apps for local voice cloning, text-to-speech and dubbing, with the model licences that decide commercial use.

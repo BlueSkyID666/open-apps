@@ -196,3 +196,13 @@ The decision is **cloud-everything convenience vs. local-first sovereignty, scop
 Shipped 2026-04-25, ~50,987 stars on GitHub, 1.3M downloads, MIT-licensed. The Capture release turned Voicebox from a voice-cloning studio into a full voice studio: dictation with global hotkey, an MCP server, personality-driven voice profiles, and a local LLM that doubles as the refinement model. The maintainer's own `docs/PROJECT_STATUS.md` is the most honest piece of project documentation in the open-source voice-tool space — it lists regressions, frames the funding gap, names the PR backlog, and is itself a public accountability document. Seven TTS engines, Whisper STT, Qwen3 LLM, FastAPI backend, Tauri (Rust) shell, React frontend, PyInstaller sidecar binaries. Apple Silicon is the smooth path; Windows and Linux are at least partially broken today.
 
 If Voicebox fixes the 0.5.0 regression cluster and the GPU pain matures, it becomes the only consumer-facing desktop app worth the install for the entire voice I/O loop. Until then, the Apple Silicon path is the safe one — and the architectural lesson in the sidecar handshake is worth studying regardless of platform.
+
+## How it compares
+
+| | Voicebox | [VoiceStudio](/apps/voicestudio/) | [Handy](/apps/handy/) |
+|---|---|---|---|
+| Scope | Cloning, dictation, effects, stories, MCP | Cloning, design, dubbing, dictation, audiobooks | Dictation only |
+| App licence | MIT | AGPL-3.0 | MIT |
+| Default model licence | Mostly MIT or Apache-2.0 | OmniVoice weights, CC-BY-NC | Whisper and Parakeet |
+
+Voicebox is compared with VoiceStudio in [open-source ElevenLabs alternatives](/collections/open-source-elevenlabs-alternatives/), and with dictation apps in [open-source Wispr Flow alternatives](/collections/open-source-wispr-flow-alternatives/).
