@@ -1,0 +1,44 @@
+slug: open-source-claude-tag-alternatives
+kind: curated
+title: Open Source Claude Tag Alternatives
+description: Self-hosted AI teammates you mention in Slack and other team chats, running the coding agent and model you choose.
+subject: claude-tag
+content: ./content/collections/open-source-claude-tag-alternatives.md
+# Every record related to Claude Tag joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [claude-tag]
+entries:
+  - slug: agentconnect
+    pinned: true
+    note: Best for a team of agents across many channels. Roles, memory and access rules per agent; Slack, Telegram, Discord, Lark, Google Chat, GitHub, GitLab and Linear; starts with Docker Compose. Apache-2.0, two months old.
+  - slug: centaur
+    note: Best when every request needs its own clean machine. Each Slack thread gets a Kubernetes sandbox with shell, git and your tools, plus durable workflows and credential boundaries. The heaviest setup here — Kubernetes and a 1Password service account.
+  - slug: opentag
+    note: Best for keeping code on your own computer. One Slack teammate, one ACP coding agent, running against your checkout on a paired machine; requests queue while it is offline. MIT. The editor's match — it does not call itself a Claude Tag alternative.
+ranking:
+  preset: curated
+editorial:
+  introduction: Three self-hosted ways to tag an AI teammate into a team conversation and have it do real work, with the coding agent and model you choose. AgentConnect runs a roster of agents across many channels; Centaur sandboxes every thread on Kubernetes; OpenTag keeps the work on a computer you own.
+  selectionNote: >-
+    Self-hostable applications that let a team hand work to an AI agent from a
+    shared chat channel, with an OSI-approved licence, a tagged release and
+    commits in the last 30 days. Starter templates and SDKs are excluded. Each
+    record's relation to Claude Tag is either the project's own words or marked
+    as the editor's match. Checked against GitHub on 28 September 2026.
+  lastReviewedAt: "2026-09-28"
+faq:
+  - q: Is there a self-hosted Claude Tag alternative for Slack?
+    a: All three run in Slack. AgentConnect and OpenTag start with Docker Compose; Centaur needs a Kubernetes cluster, which can be a small k3s install.
+  - q: Can I use Claude Code or Codex with them?
+    a: Yes. AgentConnect and OpenTag run any agent that speaks the Agent Client Protocol, including Claude Code and Codex. Centaur runs CLI harnesses such as Claude Code, Codex and Amp inside its sandboxes.
+  - q: Do they work outside Slack?
+    a: AgentConnect also covers Telegram, Discord, Lark, Google Chat, GitHub, GitLab, Gitea and Linear. Centaur has an HTTP API and optional Microsoft Teams ingress. OpenTag documents Slack.
+  - q: How mature are they?
+    a: All three repositories were created between May and July 2026. Pin a release and expect breaking changes.
+seo:
+  index: true
+  title: Open Source Claude Tag Alternatives – Self-Hosted AI Teammates
+  description: AgentConnect, Centaur and OpenTag compared — self-hosted AI teammates for Slack and team chat that run Claude Code, Codex or another agent you choose.
