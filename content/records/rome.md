@@ -103,7 +103,7 @@ You operate it through its own dashboard and through chat channels — Telegram,
 | Where you use it | Dashboard, Telegram, Discord, WhatsApp | Web, desktop, mobile |
 | Licence | MIT | Apache-2.0 |
 
-Both are compared in [open-source Grok Bot alternatives](/collections/open-source-grok-bot-alternatives/). More MIT software is under [MIT-licensed apps](/licenses/mit/).
+Rome, Rakazo and [OpenMausBot](/apps/openmausbot/) are compared in [open-source Grok Bot alternatives](/collections/open-source-grok-bot-alternatives/). More MIT software is under [MIT-licensed apps](/licenses/mit/).
 
 ## Verified sources
 

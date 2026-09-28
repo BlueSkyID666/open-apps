@@ -74,7 +74,7 @@ curation:
   lenses: []
 visibility: keep
 ---
-Rakazo is the most direct open-source answer to Grok Bot: persistent AI teammates, each with its own conversations, memory, routines and a computer to work on, that you run yourself with your own model and sandbox. It is Apache-2.0 and comes from the author of Inbox Zero. It is also a beta that is barely two months old. Verified against the repository on 28 September 2026, at release v0.1.6.
+Rakazo is the server-side open-source answer to Grok Bot: persistent AI teammates, each with its own conversations, memory, routines and a computer to work on, that you run yourself with your own model and sandbox. It is Apache-2.0 and comes from the author of Inbox Zero. It is also a beta that is barely two months old. Verified against the repository on 28 September 2026, at release v0.1.6.
 
 ## What it does
 
@@ -98,14 +98,14 @@ The published-images installer needs only Docker, Compose, curl and OpenSSL: it 
 
 ## How it compares
 
-| | Rakazo | [Rome](/apps/rome/) |
-|---|---|---|
-| Core idea | Persistent bots with their own computers | Agent OS that builds apps and workflows |
-| Clients | Web, Electron desktop, Expo mobile | Web dashboard |
-| Sandboxes | Docker, E2B, Daytona, CreateOS, Box | Docker |
-| Licence | Apache-2.0 | MIT |
+| | Rakazo | [OpenMausBot](/apps/openmausbot/) | [Rome](/apps/rome/) |
+|---|---|---|---|
+| Core idea | Persistent bots with their own computers | Desktop chat app of bots | Agent OS that builds apps and workflows |
+| Clients | Web, Electron desktop, Expo mobile | Desktop app | Web dashboard |
+| Sandboxes | Docker, E2B, Daytona, CreateOS, Box | Boat cloud, local VM | Docker |
+| Licence | Apache-2.0 | Apache-2.0 | MIT |
 
-Both are in [open-source Grok Bot alternatives](/collections/open-source-grok-bot-alternatives/). Other Apache-licensed apps are under [Apache-2.0 apps](/licenses/apache-2.0/).
+All three are in [open-source Grok Bot alternatives](/collections/open-source-grok-bot-alternatives/). Other Apache-licensed apps are under [Apache-2.0 apps](/licenses/apache-2.0/).
 
 ## Verified sources
 

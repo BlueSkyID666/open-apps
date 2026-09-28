@@ -11,28 +11,30 @@ query:
     type: alternative-to
     subjects: [grok-bot]
 entries:
-  - slug: rakazo
+  - slug: openmausbot
     pinned: true
-    note: Best match for Grok Bot's shape. Persistent bots with memory, routines and their own browser, terminal and desktop, on web, desktop and mobile; local Docker or cloud sandboxes. Apache-2.0, a beta since August 2026.
+    note: Best as a desktop app. A chat app where each bot runs on the Claude, Codex or Grok CLI you already use, with its own computer and 500+ connected apps; signed builds for macOS, Windows and Ubuntu. Apache-2.0, since August 2026. Bot computers and app connections use paid third-party services.
+  - slug: rakazo
+    note: Best to self-host on a server. Persistent bots with memory, routines and their own browser, terminal and desktop, on web, desktop and mobile; local Docker or cloud sandboxes. Apache-2.0, a beta since August 2026.
   - slug: rome
     note: Best if you want the agent to build software. Repeated work becomes git-tracked actions and small apps you can read and reuse, reachable from Telegram, Discord or WhatsApp. MIT, a month old.
 ranking:
   preset: curated
 editorial:
-  introduction: Two self-hosted takes on Grok Bot's idea of AI teammates that persist and keep working. Rakazo gives each bot its own computer and apps on every device; Rome turns what the agent learns into code and apps you keep.
+  introduction: Three open-source takes on Grok Bot's idea of AI teammates that persist and keep working. OpenMausBot is a desktop chat app on the agent CLIs you already have; Rakazo self-hosts bots with their own computers on every device; Rome turns what the agent learns into code and apps you keep.
   selectionNote: >-
-    Self-hostable applications for persistent AI agents, with an OSI-approved
-    licence and commits in the last 30 days. Each record's relation to Grok Bot
-    is the project's own words. Checked against GitHub on 28 September 2026.
-  lastReviewedAt: "2026-09-28"
+    Desktop or self-hostable applications for persistent AI agents, with an
+    OSI-approved licence and commits in the last 30 days. Each record's relation to Grok Bot
+    is the project's own words. Checked against GitHub on 29 September 2026.
+  lastReviewedAt: "2026-09-29"
 faq:
   - q: Is there a self-hosted Grok Bot alternative?
-    a: Rakazo and Rome both self-host with Docker. Rakazo's installer brings up the full stack with generated secrets; Rome starts from one script on localhost.
+    a: Rakazo and Rome both self-host with Docker. Rakazo's installer brings up the full stack with generated secrets; Rome starts from one script on localhost. OpenMausBot is a desktop app instead, running its agents on your own computer.
   - q: Can I use my own model?
-    a: Yes. Rakazo takes your own model credentials, and Rome lets you choose the model provider.
+    a: Yes. OpenMausBot runs on the Claude, Codex or Grok CLI you have logged in, Rakazo takes your own model credentials, and Rome lets you choose the model provider.
   - q: How mature are they?
-    a: Both repositories were created in August 2026. Rakazo calls itself beta. Expect breaking changes and pin a version.
+    a: All three repositories were created in August 2026. Rakazo calls itself beta. Expect breaking changes and pin a version.
 seo:
   index: true
-  title: Open Source Grok Bot Alternatives – Self-Hosted AI Teammates
-  description: Rakazo and Rome compared — self-hosted platforms for persistent AI teammates with their own computer and your own model.
+  title: Open Source Grok Bot Alternatives – AI Teammates You Own
+  description: OpenMausBot, Rakazo and Rome compared — open-source apps for persistent AI teammates with their own computer and your own model.

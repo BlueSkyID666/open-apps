@@ -4,13 +4,15 @@ Grok Bot, from SpaceXAI, gives you always-on AI teammates with names, jobs and m
 
 ## How to choose
 
-| | [Rakazo](/apps/rakazo/) | [Rome](/apps/rome/) |
-|---|---|---|
-| Core idea | Persistent bots with their own computers | Agent that builds apps and actions |
-| Clients | Web, desktop, mobile | Dashboard, Telegram, Discord, WhatsApp |
-| Sandboxes | Local Docker, E2B, Daytona, CreateOS, Box | Docker |
-| Licence | Apache-2.0 | MIT |
+| | [OpenMausBot](/apps/openmausbot/) | [Rakazo](/apps/rakazo/) | [Rome](/apps/rome/) |
+|---|---|---|---|
+| Core idea | Desktop chat app of bots | Persistent bots with their own computers | Agent that builds apps and actions |
+| Runs on | Your computer, with your agent CLIs | Your server | Your server |
+| Clients | Desktop app | Web, desktop, mobile | Dashboard, Telegram, Discord, WhatsApp |
+| Bot computers | Boat cloud, local VM, your machine | Local Docker, E2B, Daytona, CreateOS, Box | Docker |
+| Licence | Apache-2.0 | Apache-2.0 | MIT |
 
+- **Want it as an app on your computer, using the Claude or ChatGPT plan you already pay for?** OpenMausBot.
 - **Want Grok Bot's teammates-with-a-computer on your own server?** Rakazo.
 - **Want repeated work to turn into code you keep?** Rome.
 
