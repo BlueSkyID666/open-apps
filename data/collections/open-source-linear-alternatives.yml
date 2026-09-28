@@ -1,0 +1,43 @@
+slug: open-source-linear-alternatives
+kind: curated
+title: Open Source Linear Alternatives
+description: Self-hosted issue trackers and project management apps for software teams — including one where AI agents take issues like teammates.
+subject: linear
+content: ./content/collections/open-source-linear-alternatives.md
+# Every record related to Linear joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [linear]
+entries:
+  - slug: plane
+    pinned: true
+    note: Best overall and the safest bet. Work items, cycles, modules, views, pages and analytics, self-hosted with Docker or Kubernetes, in development since 2022. The AGPL Community Edition matches Plane Cloud's free tier; paid plans need the closed Commercial Edition.
+  - slug: itsaplan
+    note: Best for teams working with AI agents. Agents are project members that take issues, on the instance or through Claude Code and Codex on your machine, with a REST API, webhooks and MCP. AGPL, created July 2026, telemetry on until you turn it off.
+  - slug: kaneo
+    note: Best lightweight pick. Boards, lists, calendars and Gantt charts, GitHub and Gitea rules, a REST API and MCP, and nothing more. MIT with no enterprise edition.
+ranking:
+  preset: curated
+editorial:
+  introduction: Three self-hosted issue trackers for teams leaving Linear. Plane is the mature, full-featured choice; It's a Plan treats AI agents as teammates on the board; Kaneo keeps things small and MIT-licensed.
+  selectionNote: >-
+    Self-hostable issue trackers and project management applications with an
+    OSI-approved licence for the self-hosted edition and commits in the last 30
+    days. Archived projects and projects in the middle of a repository move are
+    excluded. Each record's relation to Linear is the project's own words or a
+    repository topic. Checked against GitHub and vendor documentation on
+    29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: What is the best self-hosted Linear alternative?
+    a: Plane for most teams — it is the most complete and the most widely used. Kaneo if you want something small under MIT. It's a Plan if you want AI agents to take issues.
+  - q: Is there an open-source Linear alternative with AI agents?
+    a: It's a Plan makes agents project members with roles and permissions; they run on the instance or on your machine through Claude Code, Codex, Copilot CLI or opencode. Plane and Kaneo expose MCP so outside assistants can read and change issues.
+  - q: Are they fully open source?
+    a: It's a Plan (AGPL-3.0) and Kaneo (MIT) are. Plane's Community Edition is AGPL-3.0, but its paid plans run on a closed-source Commercial Edition.
+seo:
+  index: true
+  title: Open Source Linear Alternatives – Self-Hosted & AI Agents
+  description: Plane, It's a Plan and Kaneo compared — self-hosted issue trackers for teams leaving Linear, including one where AI agents take issues like teammates.

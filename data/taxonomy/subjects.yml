@@ -69,3 +69,6 @@
 - id: grok-bot
   name: Grok Bot
   url: https://x.ai/bot
+- id: linear
+  name: Linear
+  url: https://linear.app
