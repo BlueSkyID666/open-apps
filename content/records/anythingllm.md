@@ -58,6 +58,14 @@ caveats:
     DISABLE_TELEMETRY.
   - Multi-user accounts, permissions and the embeddable chat widget are only in the Docker version,
     not the desktop app.
+relations:
+  - type: alternative-to
+    to: chatgpt
+    evidence:
+      type: self-described
+      url: https://github.com/Mintplex-Labs/anything-llm
+      quote: lets you build a private, fully-featured ChatGPT—without compromises
+      checkedAt: 2026-09-29
 seo:
   title: AnythingLLM – Open Source Private AI Workspace for Your Docs
   description: AnythingLLM lets you chat with your documents and run AI agents with local or cloud

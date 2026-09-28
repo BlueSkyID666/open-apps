@@ -87,3 +87,57 @@
 - id: gamma
   name: Gamma
   url: https://gamma.app
+- id: chatgpt
+  name: ChatGPT
+  url: https://chatgpt.com
+- id: cursor
+  name: Cursor
+  url: https://cursor.com
+- id: claude-code
+  name: Claude Code
+  url: https://claude.com/product/claude-code
+- id: github-copilot
+  name: GitHub Copilot
+  url: https://github.com/features/copilot
+- id: typeform
+  name: Typeform
+  url: https://www.typeform.com
+- id: airtable
+  name: Airtable
+  url: https://www.airtable.com
+- id: retool
+  name: Retool
+  url: https://retool.com
+- id: surveymonkey
+  name: SurveyMonkey
+  url: https://www.surveymonkey.com
+- id: qualtrics
+  name: Qualtrics
+  url: https://www.qualtrics.com
+- id: zendesk
+  name: Zendesk
+  url: https://www.zendesk.com
+- id: intercom
+  name: Intercom
+  url: https://www.intercom.com
+- id: google-analytics
+  name: Google Analytics
+  url: https://marketingplatform.google.com/about/analytics/
+- id: firebase
+  name: Firebase
+  url: https://firebase.google.com
+- id: jira
+  name: Jira
+  url: https://www.atlassian.com/software/jira
+- id: trello
+  name: Trello
+  url: https://trello.com
+- id: miro
+  name: Miro
+  url: https://miro.com
+- id: todoist
+  name: Todoist
+  url: https://todoist.com
+- id: otter
+  name: Otter.ai
+  url: https://otter.ai

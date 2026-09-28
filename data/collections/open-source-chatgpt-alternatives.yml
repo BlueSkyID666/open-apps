@@ -1,0 +1,47 @@
+slug: open-source-chatgpt-alternatives
+kind: curated
+title: Open Source ChatGPT Alternatives
+description: Self-hosted and offline AI chat apps — a team chat server for many model providers, a desktop app that runs models on your computer, and private document workspaces.
+subject: chatgpt
+content: ./content/collections/open-source-chatgpt-alternatives.md
+# Every record related to ChatGPT joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [chatgpt]
+entries:
+  - slug: librechat
+    pinned: true
+    note: Best for teams. A ChatGPT-style web app in front of OpenAI, Anthropic, Google, Bedrock, Ollama and any OpenAI-compatible model, with agents, MCP, a code interpreter, SSO and an admin panel. MIT; Docker Compose with several services.
+  - slug: jan
+    note: Best for one person on one computer. A desktop app for macOS, Windows and Linux that downloads open models and runs them offline, with optional cloud models and a local OpenAI-compatible API. Apache-2.0; analytics only if you allow them.
+  - slug: anythingllm
+    note: Best for chatting with your own documents. Desktop app or multi-user Docker server with a built-in vector database, agents and scheduled tasks. MIT; telemetry is on by default and can be turned off.
+  - slug: libre-webui
+    note: Best small, telemetry-free workspace for Ollama. Starts with one npx command, adds document chat, artifacts and sandboxed agent workspaces. Apache-2.0; a young project with a small community. The editor's match.
+ranking:
+  preset: curated
+editorial:
+  introduction: Four open-source ways to get a ChatGPT-style assistant you control. LibreChat is the self-hosted chat server for a team; Jan is the offline desktop app; AnythingLLM centres on your documents; Libre WebUI is a small, telemetry-free workspace for Ollama.
+  selectionNote: >-
+    AI chat applications you can self-host or run on your own computer, with an
+    OSI-approved licence and commits in the last 90 days. LibreChat, Jan and
+    AnythingLLM describe themselves in relation to ChatGPT; Libre WebUI does not,
+    and is marked as the editor's match. Projects under custom licences that add
+    branding or commercial restrictions are left out. Checked against GitHub on
+    29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: What is the best self-hosted ChatGPT alternative for a team?
+    a: LibreChat. It gives a team one ChatGPT-style interface for many model providers, with OAuth2, LDAP or email login, roles, groups and an admin panel.
+  - q: Can I run a ChatGPT alternative completely offline?
+    a: Yes. Jan downloads open models and runs them on your computer with no internet connection. AnythingLLM's desktop app and Libre WebUI with Ollama can also run fully locally.
+  - q: Why are Open WebUI and LobeHub not listed?
+    a: Both use custom licences rather than an OSI-approved one — Open WebUI restricts removing its branding above 50 users, and LobeHub requires a commercial licence to distribute derivative works.
+  - q: Do these apps work with OpenAI and Anthropic models too?
+    a: Yes. All four connect to cloud providers with your own API key as well as to local models.
+seo:
+  index: true
+  title: Open Source ChatGPT Alternatives – Self-Hosted & Offline AI Chat
+  description: LibreChat, Jan, AnythingLLM and Libre WebUI compared — self-hosted and offline AI chat apps with local models, cloud providers and your own documents.

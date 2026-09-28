@@ -50,6 +50,15 @@ caveats:
   - The feature list is very broad for a project this size; expect some areas to be less mature than
     others.
   - Docker is required only for the sandboxed Work environments.
+  - It does not describe itself as a ChatGPT alternative; it is listed with them for doing the same
+    job.
+relations:
+  - type: alternative-to
+    to: chatgpt
+    evidence:
+      type: editorial
+      url: https://github.com/libre-webui/libre-webui
+      checkedAt: 2026-09-29
 seo:
   title: Libre WebUI – Open Source Self-Hosted AI Workspace for Ollama
   description: Libre WebUI is a self-hosted AI workspace for Ollama and cloud models, with document
