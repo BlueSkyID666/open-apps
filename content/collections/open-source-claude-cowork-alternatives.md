@@ -20,6 +20,7 @@ Claude Cowork is Anthropic's desktop app for handing Claude real work: you give 
 ## Not listed and why
 
 - **Kuse Cowork** — MIT and self-described as a Claude Cowork alternative, but it has no release build yet; its README asks you to build from source.
+- **Open Claude Cowork** by Composio (MIT) has had no commits since May 2026. A second project with the same name, DevAgentForge's, has no licence file, which means no open-source licence.
 - **Smaller projects** named after Open Cowork, with a few hundred stars or fewer and no installable build, join when they ship one.
 
 For agents that live in a team chat rather than on your desktop, see [open-source Claude Tag alternatives](/collections/open-source-claude-tag-alternatives/). More desktop software is under [Productivity](/categories/productivity/) and [Developer tools](/categories/developer-tools/).
