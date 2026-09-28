@@ -75,3 +75,15 @@
 - id: raycast
   name: Raycast
   url: https://www.raycast.com
+- id: lovable
+  name: Lovable
+  url: https://lovable.dev
+- id: perplexity
+  name: Perplexity
+  url: https://www.perplexity.ai
+- id: manus
+  name: Manus
+  url: https://manus.im
+- id: gamma
+  name: Gamma
+  url: https://gamma.app

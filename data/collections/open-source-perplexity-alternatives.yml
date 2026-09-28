@@ -1,0 +1,43 @@
+slug: open-source-perplexity-alternatives
+kind: curated
+title: Open Source Perplexity Alternatives
+description: Self-hosted AI search and answer engines that cite their sources, with a local or cloud model you choose.
+subject: perplexity
+content: ./content/collections/open-source-perplexity-alternatives.md
+# Every record related to Perplexity joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [perplexity]
+entries:
+  - slug: vane
+    pinned: true
+    note: Best overall and the quickest to run. One Docker command with SearxNG bundled, cited answers from Ollama or a cloud model, speed to quality modes. MIT. Formerly Perplexica. The editor's match.
+  - slug: morphic
+    note: Best as a multi-user web app. Generative-UI answers, accounts, history in PostgreSQL and share links; you pick both the model and the search provider. Apache-2.0. The editor's match.
+  - slug: khoj
+    note: Best when your own documents matter as much as the web. Indexes PDFs, notes and Notion, with clients for Obsidian, Emacs, phone and WhatsApp. AGPL-3.0; last tagged release is a March beta. The editor's match.
+ranking:
+  preset: curated
+editorial:
+  introduction: Three self-hosted ways to ask a question and get an answer with sources, the way Perplexity works, on your own server and with the model you choose. Vane is the simplest; Morphic is the fullest web app; Khoj adds your own documents.
+  selectionNote: >-
+    Self-hostable AI search and answer engines that cite sources, with an
+    OSI-approved licence and commits in the last 90 days. None of the three
+    describes itself as a Perplexity alternative, so each relation is marked as
+    the editor's match. Checked against GitHub on 29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: Is there a self-hosted Perplexity alternative?
+    a: Vane, formerly Perplexica, runs in one Docker container with SearxNG built in. Morphic self-hosts with Docker Compose. Khoj has a self-hosting guide and a cloud app.
+  - q: Can they run with a local model?
+    a: Yes. All three work with local models through Ollama or similar, and with cloud providers such as OpenAI, Anthropic and Gemini.
+  - q: Which one searches my own files?
+    a: Khoj indexes your documents and notes and answers from them. Vane and Morphic accept file uploads per question.
+  - q: Do I need a search API key?
+    a: Not with Vane or Morphic's default setup, which bundle SearxNG. Morphic can also use Tavily, Brave or Exa.
+seo:
+  index: true
+  title: Open Source Perplexity Alternatives – Self-Hosted AI Search
+  description: Vane (Perplexica), Morphic and Khoj compared — self-hosted AI answer engines that cite sources, with local or cloud models and private web search.
