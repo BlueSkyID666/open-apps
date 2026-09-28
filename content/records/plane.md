@@ -57,6 +57,13 @@ relations:
       url: https://github.com/makeplane/plane
       quote: Open-source Jira, Linear, Monday, and ClickUp alternative.
       checkedAt: 2026-09-29
+  - type: alternative-to
+    to: jira
+    evidence:
+      type: self-described
+      url: https://github.com/makeplane/plane
+      quote: Open-source Jira, Linear, Monday, and ClickUp alternative.
+      checkedAt: 2026-09-29
 seo:
   title: Plane – Open Source Linear & Jira Alternative, Self-Hosted
   description: Plane is a self-hostable project management platform with work items, cycles, modules,

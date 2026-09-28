@@ -1,0 +1,40 @@
+slug: open-source-figma-alternatives
+kind: curated
+title: Open Source Figma Alternatives
+description: Open-source design tools for teams leaving Figma — a self-hostable design and prototyping platform, and an AI design runtime driven by coding agents.
+subject: figma
+content: ./content/collections/open-source-figma-alternatives.md
+# Every record related to Figma joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [figma]
+entries:
+  - slug: penpot
+    pinned: true
+    note: Best overall and the direct Figma replacement. Browser-based design and prototyping with components, variants, design tokens, CSS Grid and Flex layouts, code inspect, plugins and MCP. MPL-2.0, self-host with Docker or Kubernetes.
+  - slug: open-design
+    note: Best for generating designs with AI agents instead of drawing them. Turns coding-agent CLIs into a design engine for HTML prototypes, decks, PDFs and video, bring your own model. Apache-2.0; created April 2026.
+ranking:
+  preset: curated
+editorial:
+  introduction: Two open-source routes away from Figma. Penpot is the design and prototyping platform teams draw in together, self-hosted if you like; OpenDesign is for teams that would rather have an AI agent produce the prototype.
+  selectionNote: >-
+    Open-source design and prototyping applications with an OSI-approved licence
+    and commits in the last 90 days. Penpot's maker presents it as an
+    open-source alternative to Figma; OpenDesign carries the figma-alternative
+    repository topic. Checked against GitHub and vendor sites on
+    29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: What is the best open-source Figma alternative?
+    a: Penpot. It covers interface design and prototyping with components, variants, design tokens and flexible layouts, and runs in the browser or on your own servers.
+  - q: Can I self-host a Figma alternative?
+    a: Yes. Penpot self-hosts with Docker, Kubernetes and other options. OpenDesign runs as a local-first desktop and web app.
+  - q: Is Penpot fully open source?
+    a: The repository is MPL-2.0. The paid Penpot Enterprise plan adds organisation governance — an Admin Console, advanced permissions and SSO — on cloud or self-hosted.
+seo:
+  index: true
+  title: Open Source Figma Alternatives – Self-Hosted Design Tools
+  description: Penpot and OpenDesign compared — open-source design and prototyping tools for teams leaving Figma, from self-hosted design systems to AI-generated prototypes.

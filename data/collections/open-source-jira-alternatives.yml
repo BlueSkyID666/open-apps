@@ -1,0 +1,47 @@
+slug: open-source-jira-alternatives
+kind: curated
+title: Open Source Jira Alternatives
+description: Self-hosted project management and issue trackers for teams leaving Jira — from full portfolio planning to lightweight agile boards.
+subject: jira
+content: ./content/collections/open-source-jira-alternatives.md
+# Every record related to Jira joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [jira]
+entries:
+  - slug: openproject
+    pinned: true
+    note: Best for organisations replacing Jira and MS Project together. Portfolios, agile boards, Gantt charts, roadmaps, time and cost tracking, wikis and meetings, in development since 2012. GPL-3.0 Community edition; Enterprise add-ons are paid.
+  - slug: plane
+    note: Best for software teams that want a modern issue tracker. Work items, cycles, modules, views, pages and analytics, with an MCP server. AGPL-3.0 Community Edition; paid plans need the closed Commercial Edition.
+  - slug: leantime
+    note: Best for teams where most people are not project managers. Kanban, Gantt and calendar views, goals, timesheets, strategy canvases and wikis, designed with ADHD and dyslexia in mind. AGPL-3.0; telemetry on until you turn it off.
+  - slug: taiga
+    note: Best for agile teams that live in Scrum and Kanban. Backlogs, sprints and burndown charts, boards with swimlanes and WIP limits, epics. MPL-2.0 backend and AGPL-3.0 front end. The editor's match.
+ranking:
+  preset: curated
+editorial:
+  introduction: Four self-hosted tools for teams leaving Jira. OpenProject is the broadest, with portfolios and Gantt planning; Plane is the modern issue tracker for software teams; Leantime keeps planning approachable; Taiga does Scrum and Kanban cleanly.
+  selectionNote: >-
+    Self-hostable project management and issue tracking applications with an
+    OSI-approved licence for the self-hosted edition and commits in the last 90
+    days. Archived projects are excluded. OpenProject, Plane and Leantime
+    describe themselves as Jira alternatives; Taiga does not, and is marked as
+    the editor's match. Checked against GitHub and vendor sites on
+    29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: What is the best open-source Jira alternative?
+    a: OpenProject if you also plan portfolios, budgets and Gantt schedules. Plane if you are a software team that wants a fast, modern tracker. Both self-host.
+  - q: Is there a free self-hosted replacement for Jira Data Center?
+    a: All four self-host at no cost. OpenProject's Community edition, Plane's Community Edition, Leantime and Taiga are all under OSI-approved licences; OpenProject and Plane sell additional features on top.
+  - q: Which one is simplest to learn?
+    a: Leantime is designed for people who are not project managers, and Taiga keeps Scrum and Kanban uncluttered. OpenProject has the most to learn.
+  - q: Do any of them send telemetry?
+    a: Leantime and Taiga send anonymous usage statistics by default; both can be switched off in settings or configuration.
+seo:
+  index: true
+  title: Open Source Jira Alternatives – Self-Hosted Project Management
+  description: OpenProject, Plane, Leantime and Taiga compared — self-hosted project management and agile trackers for teams leaving Jira, with licences and trade-offs.

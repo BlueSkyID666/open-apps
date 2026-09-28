@@ -1,0 +1,42 @@
+slug: open-source-trello-alternatives
+kind: curated
+title: Open Source Trello Alternatives
+description: Self-hosted Kanban boards and task managers for people leaving Trello — from a real-time board with a Trello importer to a minimal PHP app.
+subject: trello
+content: ./content/collections/open-source-trello-alternatives.md
+# Every record related to Trello joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [trello]
+entries:
+  - slug: wekan
+    pinned: true
+    note: Best overall for Trello-style boards. Real-time boards, lists and cards with swimlanes, WIP limits and webhooks, and importers for Trello, Jira and Asana. MIT, no telemetry; needs MongoDB and at least 1 GB of RAM.
+  - slug: vikunja
+    note: Best when you want more than a board. The same tasks as a list, Gantt chart, table or Kanban board, with reminders, repeating tasks and importers for Trello and Todoist. AGPL-3.0, one binary or Docker.
+  - slug: kanboard
+    note: Best minimal board. A small PHP app with WIP limits, a search language, automatic actions and plugins, on SQLite, MySQL or PostgreSQL. MIT, in maintenance mode. The editor's match.
+ranking:
+  preset: curated
+editorial:
+  introduction: Three self-hosted Kanban tools for people leaving Trello. WeKan is the closest to Trello's boards, lists and cards; Vikunja adds lists, Gantt and reminders; Kanboard is the small, finished option.
+  selectionNote: >-
+    Self-hostable Kanban boards and task managers with an OSI-approved licence
+    and commits in the last 90 days. Archived and inactive projects are
+    excluded. WeKan and Vikunja describe themselves as Trello alternatives;
+    Kanboard does not, and is marked as the editor's match. Checked against
+    GitHub and vendor sites on 29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: What is the best self-hosted Trello alternative?
+    a: WeKan for boards that feel like Trello, with real-time updates and a Trello importer. Vikunja if you also want to-do lists, reminders and a Gantt chart.
+  - q: Can I import my Trello boards?
+    a: Yes, into WeKan and Vikunja; both have Trello importers. Kanboard has no importer listed on its site.
+  - q: Which one is lightest to run?
+    a: Kanboard, a small PHP app that can use SQLite. Vikunja ships as a single binary. WeKan needs MongoDB and at least 1 GB of free RAM.
+seo:
+  index: true
+  title: Open Source Trello Alternatives – Self-Hosted Kanban Boards
+  description: WeKan, Vikunja and Kanboard compared — self-hosted Kanban boards and task managers for people leaving Trello, with Trello import, licences and trade-offs.

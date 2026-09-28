@@ -1,0 +1,40 @@
+slug: open-source-miro-alternatives
+kind: curated
+title: Open Source Miro Alternatives
+description: Open-source whiteboards for teams leaving Miro — a workspace where docs and whiteboard share one canvas, and a fast hand-drawn diagramming board.
+subject: miro
+content: ./content/collections/open-source-miro-alternatives.md
+# Every record related to Miro joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [miro]
+entries:
+  - slug: affine
+    pinned: true
+    note: Best for planning and writing on the same canvas. Sticky notes, shapes, embeds, databases and slides on an edgeless whiteboard that is also a document, local-first with real-time sync and desktop apps. MIT client, open-core server; telemetry on until you turn it off.
+  - slug: excalidraw
+    note: Best for quick diagrams with others. A hand-drawn-style infinite canvas with end-to-end encrypted live collaboration, offline use and an open file format, self-hosted with Docker. MIT. The editor's match.
+ranking:
+  preset: curated
+editorial:
+  introduction: Two open-source whiteboards for teams leaving Miro. AFFiNE merges the whiteboard with docs and databases; Excalidraw is the fast, focused diagramming board.
+  selectionNote: >-
+    Open-source whiteboard applications with an OSI-approved licence for the
+    self-hosted edition and commits in the last 90 days. AFFiNE describes itself
+    as an alternative to Notion and Miro; Excalidraw does not, and is marked as
+    the editor's match. Checked against GitHub and vendor sites on
+    29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: What is the best open-source Miro alternative?
+    a: AFFiNE if you want a whiteboard that also holds docs, databases and slides. Excalidraw if you mostly draw diagrams together and want something instant.
+  - q: Can I self-host an online whiteboard?
+    a: Yes. Excalidraw self-hosts with Docker Compose, and AFFiNE has a self-hosted server with Docker as well as desktop apps.
+  - q: Are they fully open source?
+    a: Excalidraw is MIT. AFFiNE's client is MIT and its Community Edition server code is MPL-2.0, while Enterprise-only features in the server need a subscription.
+seo:
+  index: true
+  title: Open Source Miro Alternatives – Self-Hosted Whiteboards
+  description: AFFiNE and Excalidraw compared — open-source whiteboards for teams leaving Miro, with live collaboration, self-hosting and local-first storage.
