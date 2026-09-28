@@ -1,0 +1,45 @@
+slug: open-source-raycast-alternatives
+kind: curated
+title: Open Source Raycast Alternatives
+description: Keyboard launchers and command palettes for Linux, Windows and macOS — including one that runs Raycast extensions.
+subject: raycast
+content: ./content/collections/open-source-raycast-alternatives.md
+# Every record related to Raycast joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [raycast]
+entries:
+  - slug: wox
+    pinned: true
+    note: Best across operating systems. One native launcher for Windows, macOS and Linux with a plugin store and Node.js or Python plugins. GPL-3.0, maintained since 2013, and the only one here that calls itself a Raycast alternative.
+  - slug: vicinae
+    note: Best on Linux, and the only pick that runs Raycast extensions. Many Raycast extensions and script commands work as-is, with clipboard history and snippets built in. GPL-3.0, pre-1.0. The editor's match — it calls itself Raycast-compatible.
+  - slug: flow-launcher
+    note: Best on Windows. Fast app, file and file-content search through Everything, a preview panel, and a large plugin store in C#, F#, Python or Node.js. MIT, since 2020. The editor's match.
+  - slug: sol
+    note: Best free Mac launcher with no setup. Window manager, clipboard, calendar, emoji picker and dozens of small utilities built in, no extension store. MIT. The editor's match.
+ranking:
+  preset: curated
+editorial:
+  introduction: Four open-source keyboard launchers that do Raycast's core job — press a hotkey, type, act. Wox covers all three desktop platforms; Vicinae brings Raycast extensions to Linux; Flow Launcher is the Windows specialist; Sol is the Mac pick with everything built in.
+  selectionNote: >-
+    Desktop keyboard launchers and command palettes with an OSI-approved
+    licence, a downloadable build and commits in the last 30 days. Each record's
+    relation to Raycast is the project's own words or marked as the editor's
+    match. Checked against GitHub and Raycast's site on 29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: Is there an open-source Raycast alternative for Linux?
+    a: Raycast ships for macOS and Windows only. Vicinae was built for Linux and runs many Raycast extensions and script commands; Wox also has Linux builds.
+  - q: Can I use Raycast extensions in an open-source launcher?
+    a: Vicinae runs many of them, installed from the Raycast store inside the app. Extensions that depend on macOS-only APIs may not work.
+  - q: Which one works on Windows?
+    a: Flow Launcher is Windows-only and the most mature there. Wox and Vicinae also ship Windows builds.
+  - q: Do any of them include AI chat?
+    a: Not as a built-in paid tier like Raycast Pro. Plugins and extensions can add it.
+seo:
+  index: true
+  title: Open Source Raycast Alternatives – Linux, Windows & Mac
+  description: Wox, Vicinae, Flow Launcher and Sol compared — open-source keyboard launchers for Linux, Windows and macOS, including one that runs Raycast extensions.

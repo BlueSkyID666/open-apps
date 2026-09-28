@@ -72,3 +72,6 @@
 - id: linear
   name: Linear
   url: https://linear.app
+- id: raycast
+  name: Raycast
+  url: https://www.raycast.com
