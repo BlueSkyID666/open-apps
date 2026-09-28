@@ -31,3 +31,6 @@ public/robots.txt
 !.grove/registry.lock.json
 # lychee link-check cache (see .lychee.toml)
 .lycheecache
+
+# Local, private agent instructions
+CLAUDE.local.md
