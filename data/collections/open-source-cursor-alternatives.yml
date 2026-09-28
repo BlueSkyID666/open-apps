@@ -1,0 +1,44 @@
+slug: open-source-cursor-alternatives
+kind: curated
+title: Open Source Cursor Alternatives
+description: AI code editors and editor agents you can inspect and run with your own models — a native Rust editor, and two agents that turn VS Code into an agentic IDE.
+subject: cursor
+content: ./content/collections/open-source-cursor-alternatives.md
+# Every record related to Cursor joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [cursor]
+entries:
+  - slug: zed
+    pinned: true
+    note: Best standalone editor. A native Rust editor with an agent panel, edit predictions, your own keys or Ollama, and Claude Agent, Codex or OpenCode over ACP. GPL-3.0; the editor is free, hosted models and unlimited predictions are paid. The editor's match.
+  - slug: kilo-code
+    note: Best for staying in VS Code or JetBrains with both an agent and autocomplete. Code, Plan, Ask and Debug agents, 500+ models at provider prices. MIT, and the only pick here that compares itself with Cursor on its own site.
+  - slug: cline
+    note: Best for step-by-step control. Plan and Act modes, a diff and an approval for every edit and command, checkpoints to undo, and a headless CLI. Apache-2.0 apart from the closed JetBrains plugin. The editor's match.
+ranking:
+  preset: curated
+editorial:
+  introduction: Three open-source ways to get what Cursor sells — an editor where an AI agent edits across your project. Zed replaces the editor; Kilo Code and Cline add the agent to the VS Code you already have, with any model including local ones.
+  selectionNote: >-
+    AI code editors and editor extensions with an OSI-approved licence, an
+    installable release and commits in the last 30 days. Archived projects are
+    excluded. Each record's relation to Cursor is the project's own words or
+    marked as the editor's match. Checked against GitHub and the projects'
+    sites on 29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: Is there an open-source Cursor alternative?
+    a: Zed is a full open-source editor with AI agents built in. If you want to stay in VS Code, Kilo Code and Cline add a Cursor-style agent as an extension.
+  - q: Can I use my own API keys or local models?
+    a: Yes, with all three. Zed and Cline work with your own keys or Ollama and LM Studio; Kilo Code takes your own keys, local models or pay-as-you-go credits at provider prices.
+  - q: What happened to Void?
+    a: Void, an open-source AI editor forked from VS Code, is deprecated and its repository archived; its last commit was in June 2026, so it is not listed.
+  - q: Are they free?
+    a: The code of all three is free and open source. Zed's hosted models and unlimited edit predictions, and Kilo's credits and cloud agents, are optional paid extras; your own keys or local models work without them.
+seo:
+  index: true
+  title: Open Source Cursor Alternatives – AI Code Editors
+  description: Zed, Kilo Code and Cline compared — open-source AI code editors and VS Code agents that work with your own model keys or local models.

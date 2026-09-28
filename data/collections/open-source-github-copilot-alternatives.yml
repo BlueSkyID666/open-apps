@@ -1,0 +1,41 @@
+slug: open-source-github-copilot-alternatives
+kind: curated
+title: Open Source GitHub Copilot Alternatives
+description: Open-source AI coding assistants for VS Code and JetBrains — completion, chat and agents — including one that keeps every request on your own network.
+subject: github-copilot
+content: ./content/collections/open-source-github-copilot-alternatives.md
+# Every record related to GitHub Copilot joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [github-copilot]
+entries:
+  - slug: twinny
+    pinned: true
+    note: Best self-hosted pick. Completion, inline edits, chat and code review in VS Code against Ollama, LM Studio, llama.cpp or a team gateway on your network. MIT, no telemetry, no account. Calls itself a self-hosted GitHub Copilot alternative.
+  - slug: kilo-code
+    note: Best for JetBrains users and for agent work. Autocomplete plus Code, Plan, Ask and Debug agents in VS Code, JetBrains and the terminal, with 500+ models at provider prices. MIT; compares itself with Copilot on its own site.
+ranking:
+  preset: curated
+editorial:
+  introduction: Two open-source AI assistants that do GitHub Copilot's everyday jobs — completion and chat in the editor — with models you choose. twinny keeps everything on your own model server; Kilo Code adds agents and JetBrains support.
+  selectionNote: >-
+    AI coding assistants for common editors with an OSI-approved licence, an
+    installable release and commits in the last 30 days. Inactive projects are
+    excluded. Each record's relation to GitHub Copilot is the project's own
+    words. Checked against GitHub and the projects' sites on 29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: Is there a self-hosted GitHub Copilot alternative?
+    a: twinny runs in VS Code against a model server you control — on your machine, another of your computers, or a team gateway on your network — and sends no telemetry.
+  - q: Which one works in JetBrains IDEs?
+    a: Kilo Code has a JetBrains plugin as well as a VS Code extension and a CLI. twinny is VS Code only.
+  - q: What happened to Tabby?
+    a: Tabby, a self-hosted Copilot alternative, has had no commits since June 2026, so it is not listed for now.
+  - q: Are they free?
+    a: Both are open source and free to use with your own models. twinny's team gateway is free for five developers; Kilo Code sells model credits at provider prices, which you can skip by using your own keys.
+seo:
+  index: true
+  title: Open Source GitHub Copilot Alternatives – Self-Hosted AI
+  description: twinny and Kilo Code compared — open-source AI code completion, chat and agents for VS Code and JetBrains, with local or self-hosted models.
