@@ -1,0 +1,48 @@
+slug: open-source-claude-cowork-alternatives
+kind: curated
+title: Open Source Claude Cowork Alternatives
+description: Desktop AI agents that work on files on your own computer with the model you choose, instead of a Claude subscription.
+subject: claude-cowork
+content: ./content/collections/open-source-claude-cowork-alternatives.md
+# Every record related to Claude Cowork joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [claude-cowork]
+entries:
+  - slug: openwork
+    pinned: true
+    note: Best overall, and the one to try first on Linux. The closest match to the Cowork workflow on all three desktop platforms, any model including Ollama, and a guide for moving skills and MCP servers over. The desktop app is MIT; its team control plane is source-available and paid above five users.
+  - slug: eigent
+    note: Best when a job splits into parallel parts. Runs a workforce of specialised agents at once, Apache-2.0 end to end, releasing since 2025. The quick start uses Eigent's cloud and an account; fully local means running its Docker backend.
+  - slug: open-cowork
+    note: Best for keeping the agent away from your host system on Windows. Shell commands run in a WSL2 or Lima VM when one is installed. Apple Silicon and x64 Windows only, last release in May, and the bundled document skills are Anthropic's, not MIT.
+  - slug: openworker
+    note: Best for work that needs an audit trail. Approval gates the agent cannot talk its way past, a log of who approved each action, and security-review coworkers first. MIT, macOS and Windows, open beta since July 2026. The editor's match — it does not call itself a Cowork alternative.
+  - slug: nextcowork
+    note: Best for developers. An agent workspace with editor, terminal, Git and browser in one window, per-call approval and plugins, on all three platforms. Young, with three contributors.
+ranking:
+  preset: curated
+editorial:
+  introduction: Five desktop apps that do what Claude Cowork does — an agent working in folders on your computer — with a model you pick and code you can read. OpenWork is the closest match on every platform; Eigent adds parallel agents; Open Cowork sandboxes commands in a VM; OpenWorker adds governance; NextCoWork is built for code.
+  selectionNote: >-
+    Desktop apps that let an AI agent act on local files, with an OSI-approved
+    licence for the application, a downloadable build and commits in the last
+    30 days. Each record's relation to Claude Cowork is either the project's own
+    words or marked as the editor's match. Stars, licences and releases were
+    checked against GitHub on 28 September 2026.
+  lastReviewedAt: "2026-09-28"
+faq:
+  - q: Is there an open-source Claude Cowork alternative for Linux?
+    a: OpenWork, Eigent and NextCoWork all publish Linux builds. Open Cowork and OpenWorker cover macOS and Windows only.
+  - q: Can I use a local model instead of Claude?
+    a: Yes. OpenWork documents Ollama and other OpenAI-compatible servers, Eigent's local deployment names vLLM, Ollama and LM Studio, and OpenWorker supports Ollama. NextCoWork accepts custom endpoints and Ollama in its settings.
+  - q: Are these apps fully open source?
+    a: Eigent, NextCoWork and OpenWorker are. OpenWork's desktop app is MIT, but its organisation control plane under ee/ is source-available and needs a subscription above five users. Open Cowork's code is MIT, but it bundles Anthropic's document skills, which are not.
+  - q: Do I need an account?
+    a: Not for OpenWork, Open Cowork or OpenWorker. Eigent's quick start uses its cloud and an account unless you run the included local backend. NextCoWork's own model gateway needs an account; your own endpoint does not.
+seo:
+  index: true
+  title: Open Source Claude Cowork Alternatives – Local & Any Model
+  description: OpenWork, Eigent, Open Cowork, OpenWorker and NextCoWork compared — desktop AI agents that work on your files with any model, on macOS, Windows and Linux.

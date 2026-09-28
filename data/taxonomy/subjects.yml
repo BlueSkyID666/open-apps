@@ -60,3 +60,12 @@
   url: https://www.granola.ai
 - id: claude-design
   name: Claude Design
+- id: claude-cowork
+  name: Claude Cowork
+  url: https://www.anthropic.com/product/claude-cowork
+- id: claude-tag
+  name: Claude Tag
+  url: https://claude.com/product/tag
+- id: grok-bot
+  name: Grok Bot
+  url: https://x.ai/bot
