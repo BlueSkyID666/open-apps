@@ -103,7 +103,10 @@ function row(label: string, value: unknown) {
 <aside
   class:list={[
     layout === "grid"
-      ? "grove-sidebar grid grid-cols-1 items-start gap-4 sm:grid-cols-2 xl:grid-cols-4"
+      ? // Full width under the article: a flat band of columns, not a wall of
+        // boxes of uneven height. Cards lose their frame here; the badge and
+        // source notes sit on their own row below.
+        "grove-sidebar grid grid-cols-1 items-start gap-x-10 gap-y-8 sm:grid-cols-2 xl:grid-cols-4 [&>.grove-card]:rounded-none [&>.grove-card]:border-0 [&>.grove-card]:bg-transparent [&>.grove-card]:p-0"
       : "grove-sidebar flex flex-col gap-4",
     layout === "column" &&
       sticky &&
@@ -401,18 +404,20 @@ function row(label: string, value: unknown) {
     </section>
   )}
 
-  <FeaturedBadge
-    pageUrl={new URL(`/${detail.slug}/${record.slug}/`, siteConfig.siteUrl).href}
-    origin={new URL(siteConfig.siteUrl).origin}
-    siteName={siteConfig.name}
-    name={String((record as { name?: string }).name ?? record.slug)}
-    outboundRef={siteConfig.outbound.ref}
-  />
+  <div class:list={[layout === "grid" && "border-t border-border pt-6 sm:col-start-1 xl:col-span-2 [&>.grove-card]:rounded-none [&>.grove-card]:border-0 [&>.grove-card]:bg-transparent [&>.grove-card]:p-0"]}>
+    <FeaturedBadge
+      pageUrl={new URL(`/${detail.slug}/${record.slug}/`, siteConfig.siteUrl).href}
+      origin={new URL(siteConfig.siteUrl).origin}
+      siteName={siteConfig.name}
+      name={String((record as { name?: string }).name ?? record.slug)}
+      outboundRef={siteConfig.outbound.ref}
+    />
+  </div>
 
   {/* ── Source card (small) ────────────────────────────────── */}
   {sidebar.showSource && (
     <section
-      class="grove-card grove-card--muted rounded-[var(--radius-lg)] border border-dashed border-ink-200 bg-card/50 p-4 text-2xs text-ink-500 dark:border-ink-800 dark:text-ink-400"
+      class:list={[layout === "grid" && "!border-t !border-solid !border-border !pt-6 xl:col-span-2", "grove-card grove-card--muted rounded-[var(--radius-lg)] border border-dashed border-ink-200 bg-card/50 p-4 text-2xs text-ink-500 dark:border-ink-800 dark:text-ink-400"]}
       aria-labelledby="sidebar-source-title"
     >
       <h2
@@ -430,7 +435,7 @@ function row(label: string, value: unknown) {
           can stamp `reviewedAt` on a record nobody has read. */}
       {record.curation?.reviewed && reviewedAtLabel && (
         <p class:list={["m-0 leading-relaxed", addedAtLabel && "mt-1.5"]}>
-          Reviewed by {record.curation?.reviewedBy ?? "grove"}
+          Reviewed by {record.curation?.reviewedBy ?? "grove"}{" "}
           on <time datetime={String(record.curation?.reviewedAt)}>
             {reviewedAtLabel}
           </time>.
