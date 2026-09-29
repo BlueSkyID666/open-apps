@@ -3,23 +3,32 @@ import siteConfig from '@grove/generated/site-config.json';
 import { getTaxonomyPageModel, itemLabelPlural } from '@grove-dev/astro/server';
 import TaxonomyList from '../../components/grove/taxonomy-list.astro';
 import BaseLayout from '../../layouts/base-layout.astro';
+import { taxonomyDescription, taxonomyHeading, taxonomyTitle, type TaxonomyTerm } from '../../lib/seo';
 
 export function getStaticPaths() {
   const licenses = siteConfig.taxonomy?.licenses ?? [];
-  return licenses.map(({ id, name }) => ({
-    params: { name: id },
-    props: { displayName: name },
+  // `seoTitle` / `heading` / `description` in data/taxonomy/licenses.yml are
+  // editorial overrides, as for categories and stacks.
+  return licenses.map((term) => ({
+    params: { name: term.id },
+    props: { displayName: term.name, term: term as TaxonomyTerm },
   }));
 }
 
-const { displayName } = Astro.props;
+// A plain-language guide under the list for the licences people search for
+// ("can I use MIT code commercially?"): content/licenses/<id>.md.
+const guides = import.meta.glob<{ Content: any }>('../../../content/licenses/*.md', { eager: true });
+
+const { displayName, term } = Astro.props;
 const name = Astro.params.name;
 const model = getTaxonomyPageModel('licenses', name, displayName, siteConfig);
+const plural = itemLabelPlural();
+const Guide = guides[`../../../content/licenses/${name}.md`]?.Content;
 ---
 
 <BaseLayout
-  title={model.seo.title}
-  description={model.seo.description}
+  title={taxonomyTitle(term, plural, siteConfig.name)}
+  description={taxonomyDescription('licenses', term, plural)}
   image={model.seo.image}
   imageAlt={model.seo.imageAlt}
   jsonLd={model.seo.jsonLd}
@@ -29,9 +38,18 @@ const model = getTaxonomyPageModel('licenses', name, displayName, siteConfig);
   <TaxonomyList
     eyebrow="License"
     displayName={displayName}
-    lede={`Browse open-source ${itemLabelPlural()} in this directory licensed under ${displayName}.`}
+    heading={term.heading ? taxonomyHeading(term, plural) : `${displayName} ${plural}`}
+    lede={taxonomyDescription('licenses', term, plural)}
     scope={{ licenses: [name] }}
     count={model.records.length}
     pathPrefix={`/licenses/${name}`}
-  />
+  >
+    {Guide && (
+      <section class="mx-auto w-full max-w-container px-5 pt-4 pb-4 sm:px-7" aria-label={`About the ${displayName}`}>
+        <div class="grove-prose max-w-[72ch] border-t border-border pt-8">
+          <Guide />
+        </div>
+      </section>
+    )}
+  </TaxonomyList>
 </BaseLayout>

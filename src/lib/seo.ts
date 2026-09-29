@@ -66,7 +66,7 @@ export interface TaxonomyTerm {
   description?: string;
 }
 
-export type TaxonomyKind = 'stacks' | 'categories';
+export type TaxonomyKind = 'stacks' | 'categories' | 'licenses';
 
 /** "React (web)" reads badly inside a sentence; "React" does not. */
 function plainName(term: TaxonomyTerm): string {
@@ -86,6 +86,8 @@ export function taxonomyDescription(kind: TaxonomyKind, term: TaxonomyTerm, plur
   const fallback =
     kind === 'stacks'
       ? `Browse open-source ${plural} built with ${name}. Compare real codebases by activity, license, platform and maturity, with source code you can run and study.`
-      : `Discover open-source ${name.toLowerCase()} ${plural} with public source code. Compare them by stack, activity, license and maturity.`;
+      : kind === 'licenses'
+        ? `Browse open-source ${plural} in this directory licensed under ${name}, with source code you can run, study and reuse under its terms.`
+        : `Discover open-source ${name.toLowerCase()} ${plural} with public source code. Compare them by stack, activity, license and maturity.`;
   return seoDescription(term.description, fallback);
 }
