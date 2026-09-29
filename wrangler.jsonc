@@ -2,7 +2,13 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "open-apps",
   "compatibility_date": "2026-07-23",
+  // worker/index.js adds `X-Robots-Tag: noindex, follow` to HTML served with
+  // a query string. It runs only on the routes below; every other request is
+  // answered by the assets binding without invoking the Worker.
+  "main": "worker/index.js",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/", "/apps", "/apps/*", "/categories/*", "/stacks/*", "/licenses/*", "/collections", "/collections/*"]
   }
 }
