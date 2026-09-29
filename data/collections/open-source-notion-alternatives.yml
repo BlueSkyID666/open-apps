@@ -1,0 +1,39 @@
+slug: open-source-notion-alternatives
+kind: curated
+title: Open Source Notion Alternatives
+description: Local-first workspaces for docs, wikis and databases that you can self-host instead of keeping your notes in Notion's cloud.
+subject: notion
+content: ./content/collections/open-source-notion-alternatives.md
+# Every record related to Notion joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [notion]
+entries:
+  - slug: appflowy
+    pinned: true
+    note: Best for a Notion-style workspace everywhere. Pages, databases and AI on macOS, Windows, Linux, iOS and Android, with a guide for self-hosting the sync server. AGPL-3.0.
+  - slug: affine
+    note: Best if you think on a whiteboard as much as in documents. Docs, databases and an edgeless canvas are the same surface, with desktop apps and a Docker server. Open-core — the client is MIT, the server partly under an enterprise licence — and telemetry is on until you turn it off.
+ranking:
+  preset: curated
+editorial:
+  introduction: Two open-source workspaces that cover what most teams use Notion for — pages, wikis and databases — with the data on your own devices or server. AppFlowy is the closest match on every platform; AFFiNE merges documents with a whiteboard.
+  selectionNote: >-
+    Workspace applications for documents and databases with an OSI-approved
+    licence for the core, downloadable builds and commits in the last 30 days.
+    Each record's relation to Notion is the project's own words or a repository
+    topic. Checked against GitHub on 29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: Is there an open-source Notion alternative I can self-host?
+    a: Yes. AppFlowy publishes a self-hosting guide for its server, and AFFiNE runs its server with Docker. Both also work locally without a server.
+  - q: Which one has mobile apps?
+    a: AppFlowy ships iOS and Android apps alongside macOS, Windows and Linux builds.
+  - q: Are they fully open source?
+    a: AppFlowy is AGPL-3.0. AFFiNE's client is MIT, but parts of its server are under an enterprise licence, and some features need a subscription.
+seo:
+  index: true
+  title: Open Source Notion Alternatives – Self-Hosted & Local-First
+  description: AppFlowy and AFFiNE compared — open-source, local-first workspaces for docs, wikis and databases that you can self-host instead of Notion.

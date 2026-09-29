@@ -1,0 +1,38 @@
+slug: open-source-qualtrics-alternatives
+kind: curated
+title: Open Source Qualtrics Alternatives
+description: Self-hostable survey platforms for research and customer feedback, instead of an enterprise survey subscription.
+subject: qualtrics
+content: ./content/collections/open-source-qualtrics-alternatives.md
+# Every record related to Qualtrics joins automatically; the picks below
+# carry the verdicts and the order.
+query:
+  relatedTo:
+    type: alternative-to
+    subjects: [qualtrics]
+entries:
+  - slug: formbricks
+    pinned: true
+    note: Best for product and customer-experience surveys. Link, website, in-app and email surveys with targeting and integrations, self-hosted with Docker. AGPL core; SSO, teams and audit logs need a paid enterprise licence, and telemetry is on until you disable it.
+  - slug: limesurvey
+    note: Best for research-grade questionnaires. 30+ question types, branching, 80+ languages, closed-access invitations and statistics, developed since 2006. GPL, a classic PHP app to host yourself.
+ranking:
+  preset: curated
+editorial:
+  introduction: Two self-hostable survey platforms that each describe themselves as a Qualtrics alternative. Formbricks is built for in-product and customer feedback; LimeSurvey is the long-standing tool for academic and market research.
+  selectionNote: >-
+    Survey platforms with an OSI-approved licence for the core, a self-hosting
+    path and commits in the last 30 days. Both describe themselves as Qualtrics
+    alternatives. Checked against GitHub on 29 September 2026.
+  lastReviewedAt: "2026-09-29"
+faq:
+  - q: Is there a free, open-source Qualtrics alternative?
+    a: Formbricks and LimeSurvey both self-host for free. Formbricks keeps some enterprise features behind a paid licence; LimeSurvey also sells a hosted SaaS.
+  - q: Which is better for academic research?
+    a: LimeSurvey — branching logic, closed-access invitations, 80+ languages and built-in statistics, refined since 2006.
+  - q: Which works inside my product?
+    a: Formbricks runs website and in-app surveys targeted at user groups, as well as link and email surveys.
+seo:
+  index: true
+  title: Open Source Qualtrics Alternatives – Self-Hosted Surveys
+  description: Formbricks and LimeSurvey compared — self-hostable survey platforms for customer feedback and research, as open-source Qualtrics alternatives.
