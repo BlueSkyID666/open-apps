@@ -74,7 +74,7 @@ curation:
     - hot
   lenses:
     - production-like
-  reviewedBy: Open Apps curators
+  reviewedBy: Open App Scout curators
 visibility: keep
 ---
 AppFlowy is a self-hostable, open-source productivity workspace that pairs a

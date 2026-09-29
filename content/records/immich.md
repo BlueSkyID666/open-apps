@@ -46,7 +46,7 @@ curation:
     - mature
     - hot
   lenses: []
-  reviewedBy: Open Apps curators
+  reviewedBy: Open App Scout curators
 visibility: keep
 ---
 Immich is a self-hosted photo and video backup service that runs on your own

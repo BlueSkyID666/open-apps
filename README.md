@@ -1,5 +1,5 @@
 <!-- grove-readme:start -->
-# Open Apps
+# Open App Scout
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
@@ -269,7 +269,7 @@ same records as everything else.
 
 ## Project history
 
-Open Apps grew from
+Open App Scout grew from
 [`open-source-flutter-apps`](https://github.com/tortuvshin/open-source-flutter-apps).
 The original README-only collection is preserved in
 [README-LEGACY.md](README-LEGACY.md), while this project evolves it into a

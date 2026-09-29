@@ -14,7 +14,7 @@
  *     page the sitemap leaves out — the two must agree
  *   - a `noindex` page marked `data-pagefind-body`, which would put it
  *     in the header quick-find
- *   - the retired "Open Apps" brand in <title> or og:site_name
+ *   - the retired "Open Apps" brand in <title>, og:site_name or page text
  *   - a record, collection, category or stack page whose robots meta
  *     disagrees with the index policy (`seo.*IndexPolicy` in
  *     grove.config.ts, via site-config.json). The expected answer is
@@ -279,6 +279,10 @@ for (const file of walk(DIST)) {
   if (!description) errors.push(`${path}: missing meta description`);
   if (RETIRED_BRAND.test(title)) errors.push(`${path}: retired brand in <title> — "${title}"`);
   if (RETIRED_BRAND.test(siteName)) errors.push(`${path}: retired brand in og:site_name`);
+  // Visible copy too — "Reviewed by Open Apps curators" survived the rename
+  // in record data long after titles were fixed.
+  const visibleText = html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '').replace(/<[^>]+>/g, ' ');
+  if (RETIRED_BRAND.test(visibleText)) errors.push(`${path}: retired brand "Open Apps" in page text`);
 
   if (canonicals.length !== 1) {
     errors.push(`${path}: expected 1 canonical, found ${canonicals.length}`);

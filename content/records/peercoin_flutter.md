@@ -42,7 +42,7 @@ curation:
     - mature
   lenses:
     - production-like
-  reviewedBy: Open Apps curators
+  reviewedBy: Open App Scout curators
 visibility: keep
 ---
 peercoin_flutter is a self-custodial light wallet for Peercoin and

@@ -109,7 +109,7 @@ source:
 curation:
   reviewed: true
   reviewedAt: 2026-08-21
-  reviewedBy: Open Apps curators
+  reviewedBy: Open App Scout curators
   labels:
     - hot
     - mature

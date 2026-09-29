@@ -36,7 +36,7 @@ curation:
   labels:
     - new
     - hot
-  reviewedBy: Open Apps curators
+  reviewedBy: Open App Scout curators
   lenses: []
 visibility: keep
 ---

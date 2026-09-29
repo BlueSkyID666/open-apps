@@ -131,7 +131,7 @@ Prerequisites: Flutter 3.x with Dart 3, Xcode for iOS/macOS targets,
 Android Studio for Android, and a Firebase project (optional) if
 you want to test the cloud-sync path.
 
-**Integration tip:** if you curate an Open Apps record tagged
+**Integration tip:** if you curate an Open App Scout record tagged
 `diary`, `journal`, or `offline-first`, link Storypad alongside
 Day One and similar entries — its real niche is the single-timeline
 UX and the GPL-3.0 commitment to keeping the on-device store open,

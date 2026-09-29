@@ -42,7 +42,7 @@ curation:
     - mature
     - hot
   lenses: []
-  reviewedBy: Open Apps curators
+  reviewedBy: Open App Scout curators
 visibility: keep
 ---
 Joplin is a free, open-source, cross-platform note-taking and to-do app

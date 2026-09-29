@@ -49,7 +49,7 @@ curation:
     - hot
   lenses:
     - production-like
-  reviewedBy: Open Apps curators
+  reviewedBy: Open App Scout curators
 visibility: keep
 ---
 BlueWallet is a Bitcoin wallet focused on privacy, with first-class

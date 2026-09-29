@@ -76,7 +76,7 @@ export default defineConfig({
           { label: "Collections", href: "/collections/" },
           { label: "Stacks", href: "/stacks/" },
           { label: "Categories", href: "/categories/" },
-          { label: "Contributors", href: "/contributors/" },
+          { label: "Community", href: "/contributors/" },
         ],
       },
       {
@@ -177,7 +177,7 @@ export default defineConfig({
   },
 
   readme: {
-    title: "Open Apps",
+    title: "Open App Scout",
     tagline:
       "A hand-picked directory of real open-source applications — apps worth running, studying, and extending.",
     url: "https://openappscout.com",

@@ -113,7 +113,7 @@ addedAt: 2026-09-01
 curation:
   reviewed: true
   reviewedAt: 2026-08-21
-  reviewedBy: Open Apps curators
+  reviewedBy: Open App Scout curators
   labels:
     - hot
     - new

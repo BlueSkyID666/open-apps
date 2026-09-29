@@ -65,7 +65,7 @@ source:
 curation:
   reviewed: true
   reviewedAt: 2026-09-28
-  reviewedBy: Open Apps curators
+  reviewedBy: Open App Scout curators
   labels:
     - new
   lenses: []

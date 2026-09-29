@@ -1,4 +1,4 @@
-# Contributing to Open Apps
+# Contributing to Open App Scout
 
 Thanks for helping maintain a useful directory of real open-source apps.
 

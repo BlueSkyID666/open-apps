@@ -121,7 +121,7 @@ source:
 curation:
   reviewed: true
   reviewedAt: 2026-08-17
-  reviewedBy: Open Apps curators
+  reviewedBy: Open App Scout curators
   labels:
     - mature
   lenses:

@@ -129,7 +129,7 @@ itself runs on a low-end device — there is no server to provision, no
 cloud tenant to pay for, and no account to register before you can
 take your first order.
 
-**Integration tip:** if you curate an Open Apps directory like this
+**Integration tip:** if you curate an Open App Scout directory like this
 one and want a real-world Flutter example that ties together
 on-device persistence (`sqflite` + `sembast`), Bluetooth hardware,
 an analytics dashboard (Syncfusion), and a Sheets export via Google

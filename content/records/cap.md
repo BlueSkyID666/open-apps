@@ -47,7 +47,7 @@ curation:
   reviewed: true
   labels: []
   lenses: []
-  reviewedBy: Open Apps curators
+  reviewedBy: Open App Scout curators
   reviewedAt: 2026-08-11
 ---
 Cap is an open-source screen recorder that pairs three modes in one

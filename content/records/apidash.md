@@ -165,7 +165,7 @@ flutter run -d linux   # or -d macos / -d windows / -d ios
 Prerequisites: Flutter 3.x with Dart 3, GNU Make / `gcc` on Linux for
 the desktop build, and Xcode for the macOS and iOS targets.
 
-**Integration tip:** if you curate an Open Apps record tagged
+**Integration tip:** if you curate an Open App Scout record tagged
 `api-client` or `developer-tools`, link API Dash alongside the
 Postman and Insomnia entries rather than as a replacement — its real
 niche is the codegen breadth and the Apache-2.0 / Flutter portability
