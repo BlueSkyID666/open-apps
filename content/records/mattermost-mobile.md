@@ -39,8 +39,10 @@ relations:
   - type: alternative-to
     to: slack
     evidence:
-      type: editorial
-      checkedAt: 2026-09-22
+      type: self-described
+      url: https://mattermost.com/open-source-slack-alternative/
+      quote: Open Source Slack Alternative
+      checkedAt: 2026-09-30
 seo:
   title: Mattermost Mobile – Open Source Slack Alternative App
 addedAt: 2026-06-13

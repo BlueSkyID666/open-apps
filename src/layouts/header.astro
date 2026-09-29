@@ -17,9 +17,6 @@ import { compact } from '@grove-dev/core';
 import ThemeToggle from '../components/site/theme-toggle.astro';
 import { buttonClass } from '../lib/classnames.ts';
 import { loadCollections } from '@grove-dev/astro/server';
-import { readFileSync } from 'node:fs';
-import { join } from 'node:path';
-import { parse as parseYaml } from 'yaml';
 
 interface NavLink {
   label: string;
@@ -37,6 +34,8 @@ interface NavGroup {
 interface NavItem extends NavLink {
   children?: NavLink[];
   menu?: 'collections';
+  /** Collection slugs the collections menu shows (grove.config.ts). */
+  featured?: string[];
 }
 
 interface Site {
@@ -54,6 +53,9 @@ interface Site {
   };
   blueprintConfig?: {
     routeSlug?: string;
+  };
+  taxonomy?: {
+    subjects?: { id: string; name: string }[];
   };
 }
 
@@ -86,40 +88,30 @@ const navItems = site.nav?.length ? site.nav : defaultNavItems;
 const collections = navItems.some((item: NavItem) => item.menu === 'collections')
   ? await loadCollections(process.cwd())
   : [];
-// The Collections menu is a shortcut, not the index: a handful of the most
-// sought-after alternatives hubs (named by the product alone, "Notion") and
-// the core curated lists. Everything else lives on /collections/, which the
-// footer link of the menu points to. Keeps the header — rendered on every
-// page, desktop and mobile — the same size however many hubs exist.
-const FEATURED_SUBJECTS = ['chatgpt', 'notion', 'cursor', 'claude-cowork', 'figma', 'linear', 'airtable', 'google-analytics'];
-const FEATURED_LISTS = ['trending-open-source-apps', 'top-flutter-apps', 'top-ios-apps'];
-const subjectNames = (() => {
-  if (!collections.length) return new Map<string, string>();
-  try {
-    const rows = parseYaml(readFileSync(join(process.cwd(), 'data/taxonomy/subjects.yml'), 'utf8')) as { id: string; name: string }[];
-    return new Map(rows.map((r) => [r.id, r.name]));
-  } catch {
-    return new Map<string, string>();
-  }
-})();
-const collectionGroups = (): NavGroup[] => {
+// The Collections menu is a shortcut, not the index: the `featured`
+// slugs from grove.config.ts, alternatives hubs named by the product alone
+// ("Notion") and grouped apart from the curated lists. Everything else
+// lives on /collections/, which the footer link points to — the header,
+// rendered on every page, stays the same size however many hubs exist.
+const subjectNames = new Map((site.taxonomy?.subjects ?? []).map((s) => [s.id, s.name]));
+const collectionGroups = (featured: string[] = []): NavGroup[] => {
   const all = collections as { slug: string; title: string; subject?: string }[];
-  const hubs: NavLink[] = FEATURED_SUBJECTS.flatMap((subject) => {
-    const c = all.find((x) => x.subject === subject);
-    const name = subjectNames.get(subject);
-    return c && name ? [{ label: name, href: `/collections/${c.slug}/` }] : [];
-  });
-  const lists: NavLink[] = FEATURED_LISTS.flatMap((slug) => {
+  const hubs: NavLink[] = [];
+  const lists: NavLink[] = [];
+  for (const slug of featured) {
     const c = all.find((x) => x.slug === slug);
-    return c ? [{ label: c.title, href: `/collections/${c.slug}/` }] : [];
-  });
+    if (!c) continue;
+    const name = c.subject ? subjectNames.get(c.subject) : undefined;
+    if (name) hubs.push({ label: name, href: `/collections/${c.slug}/` });
+    else lists.push({ label: c.title, href: `/collections/${c.slug}/` });
+  }
   return [
     { label: 'Popular alternatives', items: hubs, columns: 2 },
     { label: 'Curated lists', items: lists, columns: 1 },
   ].filter((g) => g.items.length);
 };
 const menus = (navItems as NavItem[]).map((item) => {
-  const groups: NavGroup[] | undefined = item.menu === 'collections' ? collectionGroups() : undefined;
+  const groups: NavGroup[] | undefined = item.menu === 'collections' ? collectionGroups(item.featured) : undefined;
   const items: NavLink[] = groups ? groups.flatMap((g) => g.items) : (item.children ?? []);
   return { ...item, items, groups, footer: item.menu === 'collections' ? { label: `All ${collections.length} collections`, href: item.href } : undefined };
 });

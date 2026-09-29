@@ -33,7 +33,8 @@ const Guide = guides[`../../../content/licenses/${name}.md`]?.Content;
   imageAlt={model.seo.imageAlt}
   jsonLd={model.seo.jsonLd}
   site={siteConfig}
-  noindex={model.records.length === 0}
+  noindex={model.records.length === 0 || model.seo.noindex}
+  robots={model.seo.robots}
 >
   <TaxonomyList
     eyebrow="License"

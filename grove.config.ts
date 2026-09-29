@@ -39,12 +39,16 @@ export default defineConfig({
   // scaled-content pattern search engines discount. Excluded pages
   // still render (noindex,follow), stay in quick-find and leave the
   // sitemap. A record needs a Markdown body; a collection an
-  // `editorial.introduction`; a category or stack a `description` in
-  // data/taxonomy.
+  // `editorial.introduction`; a category, stack or licence a
+  // `description` in data/taxonomy.
   seo: {
     recordIndexPolicy: "editorial",
     collectionIndexPolicy: "editorial",
     taxonomyIndexPolicy: "editorial",
+    // The community page lives at /community/ (/contributors/ redirects).
+    staticPaths: ["about/", "community/"],
+    // `grove seo` fails if the old name is back in a title or page text.
+    retiredBrands: ["Open Apps"],
   },
 
   nav: [
@@ -59,8 +63,25 @@ export default defineConfig({
         { label: "Stacks", href: "/stacks/", description: "Flutter, Swift, React Native, Tauri…" },
       ],
     },
-    { label: "Collections", href: "/collections/", menu: "collections" },
-    { label: "Community", href: "/contributors/" },
+    {
+      label: "Collections",
+      href: "/collections/",
+      menu: "collections",
+      featured: [
+        "open-source-chatgpt-alternatives",
+        "open-source-notion-alternatives",
+        "open-source-cursor-alternatives",
+        "open-source-claude-cowork-alternatives",
+        "open-source-figma-alternatives",
+        "open-source-linear-alternatives",
+        "open-source-airtable-alternatives",
+        "open-source-google-analytics-alternatives",
+        "trending-open-source-apps",
+        "top-flutter-apps",
+        "top-ios-apps",
+      ],
+    },
+    { label: "Community", href: "/community/" },
     { label: "About", href: "/about/" },
   ],
 
@@ -76,7 +97,7 @@ export default defineConfig({
           { label: "Collections", href: "/collections/" },
           { label: "Stacks", href: "/stacks/" },
           { label: "Categories", href: "/categories/" },
-          { label: "Community", href: "/contributors/" },
+          { label: "Community", href: "/community/" },
         ],
       },
       {
