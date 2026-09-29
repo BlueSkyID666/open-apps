@@ -17,11 +17,21 @@ import { compact } from '@grove-dev/core';
 import ThemeToggle from '../components/site/theme-toggle.astro';
 import { buttonClass } from '../lib/classnames.ts';
 import { loadCollections } from '@grove-dev/astro/server';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { parse as parseYaml } from 'yaml';
 
 interface NavLink {
   label: string;
   href: string;
   description?: string;
+}
+
+interface NavGroup {
+  label: string;
+  items: NavLink[];
+  /** Columns on the desktop dropdown. */
+  columns: number;
 }
 
 interface NavItem extends NavLink {
@@ -76,14 +86,37 @@ const navItems = site.nav?.length ? site.nav : defaultNavItems;
 const collections = navItems.some((item: NavItem) => item.menu === 'collections')
   ? await loadCollections(process.cwd())
   : [];
+// A collection with a `subject` is an alternatives hub; in the menu it is
+// named by the product alone ("Notion"), grouped apart from the other lists,
+// so a long list of hubs stays scannable. No descriptions: titles only.
+const subjectNames = (() => {
+  if (!collections.length) return new Map<string, string>();
+  try {
+    const rows = parseYaml(readFileSync(join(process.cwd(), 'data/taxonomy/subjects.yml'), 'utf8')) as { id: string; name: string }[];
+    return new Map(rows.map((r) => [r.id, r.name]));
+  } catch {
+    return new Map<string, string>();
+  }
+})();
+const byLabel = (a: NavLink, b: NavLink) => a.label.localeCompare(b.label);
+const collectionGroups = (): NavGroup[] => {
+  const hubs: NavLink[] = [];
+  const lists: NavLink[] = [];
+  for (const c of collections as { slug: string; title: string; subject?: string }[]) {
+    const href = `/collections/${c.slug}/`;
+    const name = c.subject ? subjectNames.get(c.subject) : undefined;
+    if (name) hubs.push({ label: name, href });
+    else lists.push({ label: c.title, href });
+  }
+  return [
+    { label: 'Open-source alternatives to', items: hubs.sort(byLabel), columns: 3 },
+    { label: 'Curated lists', items: lists.sort(byLabel), columns: 2 },
+  ].filter((g) => g.items.length);
+};
 const menus = (navItems as NavItem[]).map((item) => {
-  const items: NavLink[] =
-    item.menu === 'collections'
-      ? collections
-          .map((c) => ({ label: c.title, href: `/collections/${c.slug}/`, description: c.description }))
-          .sort((a, b) => a.label.localeCompare(b.label))
-      : (item.children ?? []);
-  return { ...item, items, footer: item.menu === 'collections' ? { label: 'All collections', href: item.href } : undefined };
+  const groups: NavGroup[] | undefined = item.menu === 'collections' ? collectionGroups() : undefined;
+  const items: NavLink[] = groups ? groups.flatMap((g) => g.items) : (item.children ?? []);
+  return { ...item, items, groups, footer: item.menu === 'collections' ? { label: 'All collections', href: item.href } : undefined };
 });
 const withSlash = (path: string) => (path.endsWith('/') ? path : `${path}/`);
 const isCurrent = (menu: (typeof menus)[number], path: string) =>
@@ -146,8 +179,22 @@ const starsLabel = typeof stars === 'number' ? compact(stars) : null;
                   </summary>
                   <div class:list={[
                     "absolute left-0 top-[calc(100%+0.625rem)] z-50 rounded-[var(--radius-lg)] border border-border bg-popover p-2 shadow-lg",
-                    menu.items.length > 5 ? "w-[34rem]" : "w-80",
+                    menu.groups ? "w-[36rem]" : menu.items.length > 5 ? "w-[34rem]" : "w-80",
                   ]}>
+                    {menu.groups ? (
+                      menu.groups.map((group) => (
+                        <div class="px-1 pb-1 pt-1.5">
+                          <p class="m-0 px-2 pb-1 text-2xs font-medium uppercase tracking-wide text-muted-foreground">{group.label}</p>
+                          <ul class:list={["m-0 grid list-none gap-0 p-0", group.columns === 3 ? "grid-cols-3" : "grid-cols-2"]}>
+                            {group.items.map((item) => (
+                              <li>
+                                <a href={item.href} aria-current={withSlash(pathname) === item.href ? "page" : undefined} class="block truncate rounded-[var(--radius)] px-2 py-1.5 text-sm text-foreground no-underline outline-none hover:bg-accent focus-visible:bg-accent aria-[current=page]:bg-accent">{item.label}</a>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))
+                    ) : (
                     <ul class:list={["m-0 grid list-none gap-0.5 p-0", menu.items.length > 5 && "grid-cols-2"]}>
                       {menu.items.map((item) => (
                         <li>
@@ -158,6 +205,7 @@ const starsLabel = typeof stars === 'number' ? compact(stars) : null;
                         </li>
                       ))}
                     </ul>
+                    )}
                     {menu.footer && (
                       <a href={menu.footer.href} class="mt-1 flex items-center justify-between rounded-[var(--radius)] border-t border-border px-3 pb-1 pt-2.5 text-sm font-medium text-foreground no-underline hover:underline">
                         {menu.footer.label}<span aria-hidden="true">→</span>
@@ -211,7 +259,18 @@ const starsLabel = typeof stars === 'number' ? compact(stars) : null;
             {menus.map((menu) => (
               <li>
                 <a href={menu.href} aria-current={isCurrent(menu, pathname) ? "page" : undefined} class="block rounded-md px-2 py-1.5 text-sm font-semibold text-foreground no-underline hover:bg-accent aria-[current=page]:bg-accent">{menu.label}</a>
-                {menu.items?.length ? (
+                {menu.groups ? (
+                  menu.groups.map((group) => (
+                    <div class="mt-1">
+                      <p class="m-0 px-2 pb-0.5 pt-1 text-2xs font-medium uppercase tracking-wide text-muted-foreground">{group.label}</p>
+                      <ul class="m-0 grid list-none grid-cols-2 gap-0.5 p-0">
+                        {group.items.map((item) => (
+                          <li><a href={item.href} class="block truncate rounded-md px-2 py-1.5 text-sm text-muted-foreground no-underline hover:bg-accent hover:text-foreground">{item.label}</a></li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))
+                ) : menu.items?.length ? (
                   <ul class="m-0 mt-1 grid list-none grid-cols-2 gap-0.5 p-0">
                     {menu.items.map((item) => (
                       <li><a href={item.href} class="block truncate rounded-md px-2 py-1.5 text-sm text-muted-foreground no-underline hover:bg-accent hover:text-foreground">{item.label}</a></li>
