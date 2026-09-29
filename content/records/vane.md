@@ -38,15 +38,6 @@ whyListed:
 caveats:
   - The project was renamed from Perplexica; older guides and Docker images use the old name.
   - The last tagged release is v1.12.2 from April 2026; development continues on master.
-  - It does not describe itself as a Perplexity alternative; it is listed with them for doing the same
-    job.
-relations:
-  - type: alternative-to
-    to: perplexity
-    evidence:
-      type: editorial
-      url: https://github.com/ItzCrazyKns/Vane
-      checkedAt: 2026-09-29
 seo:
   title: Vane (Perplexica) – Open Source Self-Hosted AI Answer Engine
   description: Vane, formerly Perplexica, answers questions with cited web sources using a local or
@@ -101,7 +92,7 @@ Open `http://localhost:3000` and set up your model — Ollama for local, or Open
 | Local models | Ollama | Ollama, OpenAI-compatible | Local or online LLMs |
 | Licence | MIT | Apache-2.0 | AGPL-3.0 |
 
-All three are compared in [open-source Perplexity alternatives](/collections/open-source-perplexity-alternatives/). More MIT apps are under [MIT-licensed apps](/licenses/mit/).
+The three are compared side by side above. More MIT apps are under [MIT-licensed apps](/licenses/mit/).
 
 ## Verified sources
 

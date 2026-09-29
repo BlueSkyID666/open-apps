@@ -47,15 +47,6 @@ whyListed:
 caveats:
   - The last tagged release is a 2.0 beta from March 2026, and the team now also builds a separate
     product, Pipali.
-  - It does not describe itself as a Perplexity alternative; it is listed with them for its web
-    research.
-relations:
-  - type: alternative-to
-    to: perplexity
-    evidence:
-      type: editorial
-      url: https://github.com/khoj-ai/khoj
-      checkedAt: 2026-09-29
 seo:
   title: Khoj – Open Source Self-Hosted AI Second Brain and Search
   description: Khoj answers from the web and your own documents with local or online models, from a
@@ -101,7 +92,7 @@ Chat with a local model such as Llama, Qwen, Gemma or Mistral, or an online one 
 | Clients | Browser, Obsidian, Emacs, desktop, phone, WhatsApp | Browser | Browser |
 | Licence | AGPL-3.0 | MIT | Apache-2.0 |
 
-All three are compared in [open-source Perplexity alternatives](/collections/open-source-perplexity-alternatives/). More AGPL software is under [AGPL-3.0 apps](/licenses/agpl-3.0/).
+The three are compared side by side above. More AGPL software is under [AGPL-3.0 apps](/licenses/agpl-3.0/).
 
 ## Licence and hosting
 

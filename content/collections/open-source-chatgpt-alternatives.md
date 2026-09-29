@@ -24,4 +24,4 @@ ChatGPT is OpenAI's hosted AI assistant: a chat interface with conversation hist
 - **LobeHub** (formerly LobeChat) uses the LobeHub Community License, based on Apache-2.0 but requiring a commercial licence to develop and distribute derivative works. It is source-available rather than open source.
 - **Llama Coder** calls itself an open-source Claude Artifacts; it is an example app built on Together AI's inference API, not a general chat assistant.
 
-For a private answer engine that cites the web, see [open-source Perplexity alternatives](/collections/open-source-perplexity-alternatives/). More AI and workspace apps are under [Productivity](/categories/productivity/).
+For a private answer engine that cites the web, see [Vane](/apps/vane/), [Morphic](/apps/morphic/) or [Khoj](/apps/khoj/). More AI and workspace apps are under [Productivity](/categories/productivity/).

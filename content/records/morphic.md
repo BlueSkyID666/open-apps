@@ -38,15 +38,6 @@ whyListed:
     providers.
 caveats:
   - More moving parts than a single container — PostgreSQL, Redis and SearxNG run alongside it.
-  - It does not describe itself as a Perplexity alternative; it is listed with them for doing the same
-    job.
-relations:
-  - type: alternative-to
-    to: perplexity
-    evidence:
-      type: editorial
-      url: https://github.com/miurla/morphic
-      checkedAt: 2026-09-29
 seo:
   title: Morphic – Open Source AI Search Engine with Generative UI
   description: Morphic answers questions with cited sources and rich generative UI, self-hosted with
@@ -96,7 +87,7 @@ Clone the repository, copy `.env.local.example` to `.env.local`, set at least on
 | Accounts and sharing | Supabase auth, share links | Local search history | Web app plus editor and chat clients |
 | Licence | Apache-2.0 | MIT | AGPL-3.0 |
 
-See [open-source Perplexity alternatives](/collections/open-source-perplexity-alternatives/) for the verdicts. Other Apache-licensed apps are under [Apache-2.0 apps](/licenses/apache-2.0/).
+Other Apache-licensed apps are under [Apache-2.0 apps](/licenses/apache-2.0/).
 
 ## Verified sources
 
