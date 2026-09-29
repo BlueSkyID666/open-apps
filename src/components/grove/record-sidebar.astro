@@ -259,9 +259,19 @@ function row(label: string, value: unknown) {
             <dd class="text-ink-900 dark:text-ink-100">{pushedLabel}</dd>
           </div>
         )}
+        {/* Two clocks, named apart: when a person last reviewed the page,
+            and when the repository numbers were last synced. */}
+        {record.curation?.reviewed && reviewedAtLabel && (
+          <div class="flex items-baseline justify-between gap-3">
+            <dt class="text-ink-500 dark:text-ink-400">Editorial review</dt>
+            <dd class="text-ink-900 dark:text-ink-100">
+              <time datetime={String(record.curation?.reviewedAt)}>{reviewedAtLabel}</time>
+            </dd>
+          </div>
+        )}
         {repo?.updated_at && lastFetchedLabel && (
           <div class="flex items-baseline justify-between gap-3">
-            <dt class="text-ink-500 dark:text-ink-400">Last fetched</dt>
+            <dt class="text-ink-500 dark:text-ink-400">Repository data</dt>
             <dd class="text-ink-900 dark:text-ink-100">
               <time datetime={String(repo.updated_at)}>{lastFetchedLabel}</time>
             </dd>
