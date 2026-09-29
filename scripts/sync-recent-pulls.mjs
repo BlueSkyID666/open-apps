@@ -2,7 +2,7 @@
 /**
  * Write `data/generated/recent-pulls.json` — the most recently merged
  * pull requests from people other than the repository owner, for the
- * "Recent collaboration" section on /contributors/.
+ * "Recent collaboration" section on /community/.
  *
  * Runs in the weekly `sync-contributors` workflow next to
  * `grove sync contributors`. Bots (GitHub App accounts and `[bot]`

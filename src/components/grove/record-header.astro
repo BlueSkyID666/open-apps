@@ -145,7 +145,7 @@ const submittedBy = (detail.record as { submittedBy?: string }).submittedBy;
       )}
       {submittedBy && (
         <a
-          href={`/contributors/#${submittedBy.toLowerCase()}`}
+          href={`/community/#${submittedBy.toLowerCase()}`}
           class="inline-flex items-center gap-1.5 rounded-full border border-border py-0.5 pl-0.5 pr-2 text-2xs font-medium text-ink-700 no-underline hover:border-ink-400 dark:text-ink-300"
           title={`Added to Open App Scout by @${submittedBy}`}
           data-submitted-by={submittedBy}

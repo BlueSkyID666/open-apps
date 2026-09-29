@@ -189,7 +189,7 @@ const {
       ...yamlList("caveats", listOf(inputs.watchOut)),
       // The day the record joins the directory; `recently-added` sorts on it.
       `addedAt: ${new Date().toISOString().slice(0, 10)}`,
-      // Credits the contributor on the app page and /contributors/.
+      // Credits the contributor on the app page and /community/.
       ...(GITHUB_LOGIN.test(submitter()) ? [`submittedBy: ${submitter()}`] : []),
       "---",
       "",

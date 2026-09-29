@@ -58,7 +58,7 @@ const monthYear = (date: string) =>
   (faces.length > 0 || stars > 0 || featured) && (
     <div class="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[13px] text-ink-500 dark:text-ink-400">
       {faces.length > 0 && (
-        <a href="/contributors/" class="inline-flex items-center gap-2.5 text-inherit no-underline hover:text-foreground">
+        <a href="/community/" class="inline-flex items-center gap-2.5 text-inherit no-underline hover:text-foreground">
           <span class="flex -space-x-2" aria-hidden="true">
             {faces.map((c) => (
               <img src={`${c.avatarUrl}${c.avatarUrl!.includes('?') ? '&' : '?'}s=48`} alt="" width="24" height="24" loading="lazy" decoding="async" class="h-6 w-6 rounded-full border-2 border-background" />
