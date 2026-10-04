@@ -1,7 +1,70 @@
 {
-  "generatedAt": "2026-09-27T09:51:10.049Z",
+  "generatedAt": "2026-10-04T10:25:54.342Z",
   "repository": "tortuvshin/open-apps",
   "pulls": [
+    {
+      "number": 360,
+      "title": "Add IOTA Watch — open-source training and mining monitor",
+      "url": "https://github.com/tortuvshin/open-apps/pull/360",
+      "author": "molimao",
+      "authorUrl": "https://github.com/molimao",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/47518904?v=4",
+      "mergedAt": "2026-10-04T06:48:07Z"
+    },
+    {
+      "number": 358,
+      "title": "Add ItsPaint to Tools",
+      "url": "https://github.com/tortuvshin/open-apps/pull/358",
+      "author": "joshlin2201",
+      "authorUrl": "https://github.com/joshlin2201",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/171561901?v=4",
+      "mergedAt": "2026-10-03T08:35:04Z"
+    },
+    {
+      "number": 357,
+      "title": "Add Kinetic Life OS",
+      "url": "https://github.com/tortuvshin/open-apps/pull/357",
+      "author": "daoyi2026",
+      "authorUrl": "https://github.com/daoyi2026",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/270243353?v=4",
+      "mergedAt": "2026-10-03T08:34:40Z"
+    },
+    {
+      "number": 355,
+      "title": "Add Lotti",
+      "url": "https://github.com/tortuvshin/open-apps/pull/355",
+      "author": "cyberk1ng",
+      "authorUrl": "https://github.com/cyberk1ng",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/150244095?v=4",
+      "mergedAt": "2026-10-01T01:03:58Z"
+    },
+    {
+      "number": 354,
+      "title": "Add InvoiceFlowAI to Business apps",
+      "url": "https://github.com/tortuvshin/open-apps/pull/354",
+      "author": "EthanYoQ",
+      "authorUrl": "https://github.com/EthanYoQ",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/257484394?v=4",
+      "mergedAt": "2026-09-30T16:12:51Z"
+    },
+    {
+      "number": 351,
+      "title": "Add Oh My Android to Developer Tools",
+      "url": "https://github.com/tortuvshin/open-apps/pull/351",
+      "author": "ateymoori",
+      "authorUrl": "https://github.com/ateymoori",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/34753150?v=4",
+      "mergedAt": "2026-09-29T11:57:43Z"
+    },
+    {
+      "number": 346,
+      "title": "Add aiFetchly to Business",
+      "url": "https://github.com/tortuvshin/open-apps/pull/346",
+      "author": "anthourholder-dot",
+      "authorUrl": "https://github.com/anthourholder-dot",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/333362117?v=4",
+      "mergedAt": "2026-09-28T13:57:25Z"
+    },
     {
       "number": 343,
       "title": "Add Orvaket accounts receivable app",
@@ -10,69 +73,6 @@
       "authorUrl": "https://github.com/Akam1123",
       "avatarUrl": "https://avatars.githubusercontent.com/u/325395572?v=4",
       "mergedAt": "2026-09-26T17:37:01Z"
-    },
-    {
-      "number": 316,
-      "title": "Add Codex Quota Overlay",
-      "url": "https://github.com/tortuvshin/open-apps/pull/316",
-      "author": "cpys",
-      "authorUrl": "https://github.com/cpys",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/17068138?v=4",
-      "mergedAt": "2026-09-26T12:50:57Z"
-    },
-    {
-      "number": 280,
-      "title": "Add Orbit task manager to productivity apps",
-      "url": "https://github.com/tortuvshin/open-apps/pull/280",
-      "author": "imshashank",
-      "authorUrl": "https://github.com/imshashank",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/778870?v=4",
-      "mergedAt": "2026-09-25T15:38:45Z"
-    },
-    {
-      "number": 281,
-      "title": "Add NO SUS to tools",
-      "url": "https://github.com/tortuvshin/open-apps/pull/281",
-      "author": "https-shubhamsahu",
-      "authorUrl": "https://github.com/https-shubhamsahu",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/164779705?v=4",
-      "mergedAt": "2026-09-25T15:38:31Z"
-    },
-    {
-      "number": 282,
-      "title": "Add QuotaTempo macOS capacity planner",
-      "url": "https://github.com/tortuvshin/open-apps/pull/282",
-      "author": "ishikawa-h",
-      "authorUrl": "https://github.com/ishikawa-h",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/14194591?v=4",
-      "mergedAt": "2026-09-25T15:38:17Z"
-    },
-    {
-      "number": 279,
-      "title": "Add Cortex to developer tools",
-      "url": "https://github.com/tortuvshin/open-apps/pull/279",
-      "author": "nick-csu",
-      "authorUrl": "https://github.com/nick-csu",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/8492343?v=4",
-      "mergedAt": "2026-09-23T12:51:54Z"
-    },
-    {
-      "number": 277,
-      "title": "Add LoopTroop coding agent orchestrator",
-      "url": "https://github.com/tortuvshin/open-apps/pull/277",
-      "author": "looptroop-ai",
-      "authorUrl": "https://github.com/looptroop-ai",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/257343580?v=4",
-      "mergedAt": "2026-09-23T01:26:48Z"
-    },
-    {
-      "number": 265,
-      "title": "Add Taskuary to the productivity directory",
-      "url": "https://github.com/tortuvshin/open-apps/pull/265",
-      "author": "ldbumble",
-      "authorUrl": "https://github.com/ldbumble",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/116741397?v=4",
-      "mergedAt": "2026-09-16T02:09:12Z"
     }
   ]
 }
